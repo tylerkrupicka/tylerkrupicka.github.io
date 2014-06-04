@@ -7,7 +7,7 @@ title: Tyler Krupicka
 subtitle: Computer Engineering Student and Designer
 author: Tyler Krupicka
 simple_search: https://www.google.com/search
-description: I'm a programmer, machinist, and 3D printer enthusiast from Newberg, Oregon. I'm currently studying computer engineering at Rochester Institute of Technology in Rochester, New York.
+description: I'm a programmer, machinist, and 3D printer enthusiast from Newberg, Oregon. I'm currently studying computer engineering at Rochester Institute of Technology in Rochester, New York.<br> Here's my<a href='assets/resume.pdf'> Resume. </a>
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -69,8 +69,11 @@ github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: tkrupicka
 twitter_tweet_button: true
+
+# Thingiverse
+thingiverse_user: tylerkrupicka
 
 # Google +1
 google_plus_one: false
@@ -94,7 +97,7 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-51635607-1
 
 # Facebook Like
 facebook_like: false
