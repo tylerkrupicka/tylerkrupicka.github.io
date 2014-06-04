@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Tyler Krupicka]]></title>
   <link href="http://tylerkrupicka.github.io/atom.xml" rel="self"/>
   <link href="http://tylerkrupicka.github.io/"/>
-  <updated>2014-06-03T21:46:22-07:00</updated>
+  <updated>2014-06-03T22:21:23-07:00</updated>
   <id>http://tylerkrupicka.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
-    
+    <name><![CDATA[Tyler Krupicka]]></name>
+    <email><![CDATA[tyler.krupicka13@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
