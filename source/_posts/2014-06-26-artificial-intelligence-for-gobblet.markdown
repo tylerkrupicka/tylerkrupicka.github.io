@@ -1,0 +1,41 @@
+---
+layout: post
+title: "Artificial Intelligence for Gobblet"
+date: 2014-06-26 21:33:46 -0700
+comments: true
+categories: 
+---
+
+<p>Recently I had the opportunity to design an AI to play the board game "Gobblet" for a team-based class project. At the end of the project all of the AIs entered in to a tournament against each other to determine which strategies were the most effective. My team's AI ended up making it to the department finals; performing well against a variety of Gobblet strategies. Here I'm going to explain the basis of how our AI player was designed.</p>
+<!-- more -->
+
+<img src="http://tylerkrupicka.com/assets/gobblettournament.png" alt="Gobblet Tournament" align="center">
+
+<h2>Rules of Gobblet</h2>
+<p>To begin with I'll explain the basic rules of Gobblet. The game is played on a 4X4 grid using stackable cups in four sizes (ranging 1-4). Players take turns placing cups from their stacks on the board, trying to create a line of four of their pieces in a row. However, players also have the option of covering up cups of smaller sizes on the board when moving. This creates an interesting gameplay where covering up the other player's pieces can be more useful than placing in a free space. A more detailed set of rules can be found <a href="http://www.educationallearninggames.com/how-to-play-gobblet-game-rules.asp">here</a>.</p>
+
+<h2>Design of an AI</h2>
+<p>Creating an AI for a board game is basically like creating a system of ranking moves. Each turn your program has to look at the current state of the board and in some way or another determine what possible move is best. First, our AI would take the current state of the board and generate every possible move we could make from it. Then it would determine which of the generated moves were valid and rank them to find the most ideal one.</p>
+
+<h2>Our Strategy</h2>
+<p>The strategy we ended up using didn't end up looking in to future moves, or searching for complicated strategies. Instead it focused on creating a progression of board states that creates a win. Heres a breakdown:</p>
+<p>
+	--Winning: Make a move if we have a four-in-a-row.<br /><br />
+	--Losing: Discard moves where the opponent has an unblocked three-in-a-row or a four-in-a-row. Also discard any moves where they have intersecting two-in-a-rows. (I'll discuss this.)<br /><br />
+	--Empty Rows: Add points for each row where we have a piece and the opponent does not. Helps us start runs.<br /><br />
+	--Pieces in Stacks: Add points to a move if we have more pieces left than the opponent. We found this makes winning a long game more likely.<br /><br />
+	--Gobbles: Add points for each piece we have "gobbled" (covered up). We found that while creating runs it was useful to gobble as frequently as possible, because it ensures that we have more pieces on the board. Unfortunately, it also means you have more difficulty moving pieces because they might uncover opponent's pieces.<br />
+</p>
+<p>
+	The final part of our strategy focuses on creating a scenario where we have two intersecting three-in-a-rows in order to win. When you create a single three-in-a-row, it is easy for your opponent to see you are going to win and block it. However, if you create two three-in-a-rows in the same turn it is impossible to block - giving you the win one turn later. In order to achieve this we added a few more rankings.
+</p>
+<p>
+	--Two-in-a-Rows: Add a few points for creating (unblocked) two-in-a-rows somewhere.<br /><br />
+	--Intersecting Two-in-a-Rows: Add more points for creating two-in-a-rows that intersect.<br /><br />
+	--Intersecting Three-in-a-Rows: Add a substantial amount of points for creating intersecting three-in-a-rows.<br />
+</p>
+<p>
+	This progression allowed our player to sequentially create sequence (hopefully) leading to a forced win.
+</p>
+
+<img src="http://tylerkrupicka.com/assets/gobblet.gif" alt="AI Game" align="center">
