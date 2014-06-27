@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://tylerkrupicka.github.io/sitemap.xml 
+Sitemap: http://tylerkrupicka.com/sitemap.xml 
