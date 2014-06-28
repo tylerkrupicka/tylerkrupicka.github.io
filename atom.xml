@@ -4,7 +4,7 @@
   <title><![CDATA[Tyler Krupicka]]></title>
   <link href="http://tylerkrupicka.com/atom.xml" rel="self"/>
   <link href="http://tylerkrupicka.com/"/>
-  <updated>2014-06-27T20:02:34-07:00</updated>
+  <updated>2014-06-27T20:05:54-07:00</updated>
   <id>http://tylerkrupicka.com/</id>
   <author>
     <name><![CDATA[Tyler Krupicka]]></name>
@@ -74,7 +74,7 @@
 </p>
 
 
-<p><video width='' height='' preload='none' controls poster=''><source src='http://tylerkrupicka.com/assets/gobblet/gobblet.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video></p>
+<p><video width='700' height='480' preload='none' controls poster=''><source src='http://tylerkrupicka.com/assets/gobblet/gobblet.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video></p>
 ]]></content>
   </entry>
   
