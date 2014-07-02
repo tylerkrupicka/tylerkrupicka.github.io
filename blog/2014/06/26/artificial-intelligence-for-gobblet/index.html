@@ -106,11 +106,15 @@
 
 
 <p>
-    &#8211;Winning: Make a move if it creates a four-in-a-row.<br /><br />
-    &#8211;Losing: Discard moves where the opponent has an unblocked three-in-a-row or a four-in-a-row. Also discard any moves where they have intersecting two-in-a-rows. (I&#8217;ll discuss this.)<br /><br />
-    &#8211;Empty Rows: Add points for each row where we have a piece and the opponent does not. Helps us start runs.<br /><br />
-    &#8211;Pieces in Stacks: Add points to a move if we have more pieces left than the opponent. We found this makes winning a long game more likely.<br /><br />
-    &#8211;Gobbles: Add points for each piece we have &#8220;gobbled&#8221; (covered up). We found that while creating runs it was useful to gobble as frequently as possible, because it ensures that we have more pieces on the board. Unfortunately, it also means you have more difficulty moving pieces because they might uncover opponent&#8217;s pieces.<br />
+    1. <b>Winning</b>: Make a move if it creates a four-in-a-row.<br /><br />
+    
+    2. <b>Losing</b>: Discard moves where the opponent has an unblocked three-in-a-row or a four-in-a-row. Also discard any moves where they have intersecting two-in-a-rows. (I&#8217;ll discuss this.)<br /><br />
+
+    3. <b>Empty Rows</b>: Add points for each row where we have a piece and the opponent does not. Helps us start runs.<br /><br />
+    
+    4. <b>Pieces in Stacks</b>: Add points to a move if we have more pieces left than the opponent. We found this makes winning a long game more likely.<br /><br />
+    
+    5. <b>Gobbles</b>: Add points for each piece we have &#8220;gobbled&#8221; (covered up). We found that while creating runs it was useful to gobble as frequently as possible, because it ensures that we have more pieces on the board. Unfortunately, it also means you have more difficulty moving pieces because they might uncover opponent&#8217;s pieces.<br />
 </p>
 
 
@@ -120,18 +124,28 @@
 
 
 <p>
-    &#8211;Two-in-a-Rows: Add a few points for creating (unblocked) two-in-a-rows somewhere.<br /><br />
-    &#8211;Intersecting Two-in-a-Rows: Add more points for creating two-in-a-rows that intersect.<br /><br />
-    &#8211;Intersecting Three-in-a-Rows: Add a substantial amount of points for creating intersecting three-in-a-rows.<br />
+    6. <b>Two-in-a-Rows</b>: Add a few points for creating (unblocked) two-in-a-rows somewhere.<br /><br />
+    
+    7. <b>Intersecting Two-in-a-Rows</b>: Add more points for creating two-in-a-rows that intersect.<br /><br />
+    
+    8. <b>Intersecting Three-in-a-Rows</b>: Add a substantial amount of points for creating intersecting three-in-a-rows.<br />
 </p>
 
 
 <p>
-    This progression allowed our player to sequentially create a pattern that leads to a forced win.
+    This progression allowed our player to sequentially create a pattern that often leads to a forced win.
 </p>
 
 
-<p><video width='700' height='480' preload='none' controls poster='http://tylerkrupicka.com/images/background.jpg'><source src='http://tylerkrupicka.com/assets/gobblet/gobblet.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video></p>
+<p><video width='700' height='480' preload='none' controls poster='http://tylerkrupicka.com/assets/gobblet/videoTitle.jpg'><source src='http://tylerkrupicka.com/assets/gobblet/gobblet.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video></p>
+
+<h2>Shortcomings</h2>
+
+
+<p>
+    The strategy we chose works well for basic gameplay and setting up useful situations, but it far from perfect. Most notably, the AI doesn&#8217;t adapt to opposing playing styles &#8211; instead focusing on forming set situations. Additionally, while gobbling repeatedly is often a useful, it can leave you very vulnerable if all of your pieces are tied down. There&#8217;s plenty of different scenarios to think about when designing these programs. 
+</p>
+
 
       </div>
     </div>
