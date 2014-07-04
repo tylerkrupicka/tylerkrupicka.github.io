@@ -4,7 +4,7 @@
   <title><![CDATA[Tyler Krupicka]]></title>
   <link href="http://tylerkrupicka.com/atom.xml" rel="self"/>
   <link href="http://tylerkrupicka.com/"/>
-  <updated>2014-07-02T15:17:51-07:00</updated>
+  <updated>2014-07-04T16:00:33-07:00</updated>
   <id>http://tylerkrupicka.com/</id>
   <author>
     <name><![CDATA[Tyler Krupicka]]></name>
@@ -12,6 +12,53 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fixing the Samsung Galaxy]]></title>
+    <link href="http://tylerkrupicka.com/blog/2014/07/02/fixing-the-samsung-galaxy/"/>
+    <updated>2014-07-02T15:19:27-07:00</updated>
+    <id>http://tylerkrupicka.com/blog/2014/07/02/fixing-the-samsung-galaxy</id>
+    <content type="html"><![CDATA[<p>
+    I&#8217;ve had a Samsung Galaxy S4 smartphone for a year now and it&#8217;s a good phone. However, the software that Samsung has put on top of stock android can be really awful in places and I&#8217;ve spent lots of time finding fixes. My phone runs the stock KitKat launcher, uses stock Google service apps, does all of its media from Google Play, and uses the (much better) stock Google camera app. These apps not only look much better visually, but provide a much better service than anything Samsung produces. Here&#8217;s how to set up these fixes on any device running Android KitKat or newer.
+</p>
+
+
+<!-- more -->
+
+
+
+
+<h2>Google Now Launcher</h2>
+
+
+<p>
+    Touchwiz (the Samsung touch interface) manages to be one of the most feature rich skins of Android, without being particularly useful or visually appealing. Meanwhile, Google did a great job with the latest KitKat Launcher: Google Now integration, voice search, transparencies, and a clean UI. I&#8217;ve found the stock Google launcher to be a much better Android experience, and it is possible to get it on any KitKat phone. 
+</p>
+
+
+
+
+<p>
+    1. <b>Google Search</b>: Make sure you have the <a href="https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox&hl=en">Google Search</a> app. It contains the KitKat Launcher.<br /><br />
+
+    2. <b>Launcher APK</b>: Download <a href="http://tylerkrupicka.com/assets/kitkatlauncher.apk">this</a> apk and install it to allow you to use Google Search as your launcher.<br /><br />
+
+    3. <b>Setup</b>: Press the home button and set &#8220;Launcher&#8221; as the default launcher. That&#8217;s it.<br /><br />
+
+</p>
+
+
+
+
+<h2>Google Camera</h2>
+
+
+<p>
+    The Google Camera app is much better than the stock Samsung one (at least for photos). Get it <a href="https://play.google.com/store/apps/details?id=com.google.android.GoogleCamera&hl=en">here</a>.<br /><br />
+</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Artificial Intelligence for Gobblet]]></title>
