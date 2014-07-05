@@ -4,7 +4,7 @@
   <title><![CDATA[Tyler Krupicka]]></title>
   <link href="http://tylerkrupicka.com/atom.xml" rel="self"/>
   <link href="http://tylerkrupicka.com/"/>
-  <updated>2014-07-05T00:16:07-07:00</updated>
+  <updated>2014-07-05T00:34:47-07:00</updated>
   <id>http://tylerkrupicka.com/</id>
   <author>
     <name><![CDATA[Tyler Krupicka]]></name>
@@ -19,7 +19,7 @@
     <updated>2014-07-02T15:19:27-07:00</updated>
     <id>http://tylerkrupicka.com/blog/2014/07/02/fixing-the-samsung-galaxy</id>
     <content type="html"><![CDATA[<p>
-    I&#8217;ve had a Samsung Galaxy S4 smartphone for a year now and it&#8217;s a good phone. However, the software that Samsung has put on top of stock android can be really awful in places and I&#8217;ve spent lots of time finding fixes. My phone runs the stock KitKat launcher, uses stock Google service apps, does all of its media from Google Play, and uses the (much better) stock Google camera app. These apps not only look much better visually, but provide a much better service than anything Samsung produces. Here&#8217;s how to set up these fixes on any device running Android KitKat or newer.
+    I&#8217;ve had a Samsung Galaxy S4 smartphone for a year now and it&#8217;s a good phone. However, the software that Samsung has put on top of stock android can be really awful in places and I&#8217;ve spent lots of time finding fixes. My phone runs the stock KitKat launcher, uses stock Google service apps, does all of its media from Google Play, and uses the stock Google camera app. These apps not only look much better visually, but provide a much better service than anything Samsung produces. Here&#8217;s how to set up these fixes on any device running Android KitKat or newer.
 </p>
 
 
@@ -41,7 +41,7 @@
 <p>
     1. <b>Google Search</b>: Make sure you have the <a href="https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox&hl=en">Google Search</a> app. It contains the KitKat Launcher.<br /><br />
 
-    2. <b>Launcher APK</b>: Download <a href="http://tylerkrupicka.com/assets/kitkatlauncher.apk" download>this</a> apk and install it to allow you to use Google Search as your launcher.<br /><br />
+    2. <b>Launcher APK</b>: Download <a href="http://tylerkrupicka.com/assets/kitkat/kitkatlauncher.apk" download>this</a> apk and install it to allow you to use Google Search as your launcher.<br /><br />
 
     3. <b>Setup</b>: Press the home button and set &#8220;Launcher&#8221; as the default launcher. That&#8217;s it.<br /><br />
 
@@ -54,7 +54,18 @@
 
 
 <p>
-    The Google Camera app is much better than the stock Samsung one (at least for photos). Get it <a href="https://play.google.com/store/apps/details?id=com.google.android.GoogleCamera&hl=en">here</a>.<br /><br />
+    1. <b>Camera</b>: The Google Camera app is much better than the stock Samsung one (at least for photos). Get it <a href="https://play.google.com/store/apps/details?id=com.google.android.GoogleCamera&hl=en">here</a>.<br /><br />
+
+    2. <b>Messaging</b>: Google Hangouts is a much cleaner messaging app, which allows merged conversations between your Google account and sms. Get it <a href="https://play.google.com/store/apps/details?id=com.google.android.talk&hl=en">here</a>.<br /><br />
+
+    3. <b>Calendar</b>: Plain Google calendar app. Found <a href="https://play.google.com/store/apps/details?id=com.google.android.calendar&hl=en">here</a>.<br /><br />
+
+    4. <b>Music</b>: Google Play Music is a really convenient service for managing and playing music. Download <a href="https://support.google.com/googleplay/answer/1229970?hl=en">Google Music Manager</a> on your computer to upload songs to your account, then get the <a href="https://play.google.com/store/apps/details?id=com.google.android.music&hl=en">app</a> to listen to your library. You can change how your account stores music (so you don&#8217;t use data) in the settings tab of the app. This includes storing music on the SD card.<br /><br />
+
+    5. <b>Lock Screen</b>: I like having all of my notifications displayed while still having a phone lock. So far <a href="https://play.google.com/store/apps/details?id=com.slidelock&hl=en">SlideLock</a> is the best lock screen add on I&#8217;ve used, although it can be slow for a while when you first use it.<br /><br />
+
+    6. <b>Keyboard</b>: Swiftkey combines customizable themes, swiping, and adaptive auto correct to make typing much easier. Get it <a href="https://play.google.com/store/apps/details?id=com.touchtype.swiftkey&hl=en">here</a>.<br /><br />
+
 </p>
 
 ]]></content>
