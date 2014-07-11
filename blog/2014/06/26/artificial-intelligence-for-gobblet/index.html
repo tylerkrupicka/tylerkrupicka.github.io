@@ -104,7 +104,36 @@
 
 
 
-<p>The strategy we ended up using didn&#8217;t end up looking in to future moves, or searching for complicated strategies. Instead it focused on creating a progression of board states that creates a win. In order to avoid revealing too much of our solution (for potential students who may have the same project) I won&#8217;t go in to detail. Quite simply, we defined a set of criteria for patterns on the board that lead to a win. Then we broke the pattern down in to stages, and tried to get the AI to create each stage sequentially and create opportunities. A demonstration of a match using the completed AI can be seen below.
+<p>The strategy we ended up using didn&#8217;t end up looking in to future moves, or searching for complicated strategies. Instead it focused on creating a progression of board states that creates a win. Here&#8217;s some examples:
+</p>
+
+
+
+
+<p>
+    1. <b>Winning</b>: Make a move if it creates a four-in-a-row.<br /><br />
+    
+    2. <b>Losing</b>: Discard moves where the opponent has an unblocked three-in-a-row or a four-in-a-row. Also discard any moves where they have intersecting two-in-a-rows. (I&#8217;ll discuss this.)<br /><br />
+
+    3. <b>Empty Rows</b>: Add points for each row where we have a piece and the opponent does not. Helps us start runs.<br /><br />
+    
+    4. <b>Pieces in Stacks</b>: Add points to a move if we have more pieces left than the opponent. We found this makes winning a long game more likely.<br /><br />
+    
+    5. <b>Gobbles</b>: Add points for each piece we have &#8220;gobbled&#8221; (covered up). We found that while creating runs it was useful to gobble as frequently as possible, because it ensures that we have more pieces on the board. Unfortunately, it also means you have more difficulty moving pieces because they might uncover opponent&#8217;s pieces.<br />
+</p>
+
+
+<p>
+    The final part of our strategy focuses on creating a scenario where we have two intersecting three-in-a-rows in order to win. When you create a single three-in-a-row, it is easy for your opponent to see you are going to win and block it. However, if you create two three-in-a-rows in the same turn it is impossible to block - giving you the win one turn later. In order to achieve this we added a few more rankings.
+</p>
+
+
+<p>
+    6. <b>Two-in-a-Rows</b>: Add a few points for creating (unblocked) two-in-a-rows somewhere.<br /><br />
+    
+    7. <b>Intersecting Two-in-a-Rows</b>: Add more points for creating two-in-a-rows that intersect.<br /><br />
+    
+    8. <b>Intersecting Three-in-a-Rows</b>: Add a substantial amount of points for creating intersecting three-in-a-rows.<br />
 </p>
 
 
