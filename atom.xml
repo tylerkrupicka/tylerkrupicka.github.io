@@ -4,7 +4,7 @@
   <title><![CDATA[Tyler Krupicka]]></title>
   <link href="http://tylerkrupicka.com/atom.xml" rel="self"/>
   <link href="http://tylerkrupicka.com/"/>
-  <updated>2014-07-10T19:13:07-07:00</updated>
+  <updated>2014-07-10T19:43:50-07:00</updated>
   <id>http://tylerkrupicka.com/</id>
   <author>
     <name><![CDATA[Tyler Krupicka]]></name>
@@ -12,6 +12,50 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Prusa Mendel I2 (Re)build]]></title>
+    <link href="http://tylerkrupicka.com/blog/2014/07/10/prusa-mendel-i2-re-build/"/>
+    <updated>2014-07-10T19:15:30-07:00</updated>
+    <id>http://tylerkrupicka.com/blog/2014/07/10/prusa-mendel-i2-re-build</id>
+    <content type="html"><![CDATA[<p>
+    This spring I purchased a partially completed Prusa Mendel i2 hobby 3D printer from another student at RIT. On initial inspection the printer looked fully assembled, but didn&#8217;t have the correct software. In all actuality, there was still quite a bit to fix before it would be ready to print.
+</p>
+
+
+<!-- more -->
+
+
+
+
+<h2>Initial Problems</h2>
+
+
+<p>
+    The printer itself was an (almost) complete kit that was technically assembled, but very poorly. I initially focused on getting functioning firmware on the printer and checking that the wiring was fine. You can find my fork of the open source Sprinter firmware <a href='https://github.com/tylerkrupicka/Sprinter'>here</a>. The printer uses the Sanguinololu 1.2 board and Pololu motor drivers to run each of the steppers. Luckily, all of the motors worked when I configured the firmware so I could focus on the hardware.
+</p>
+
+
+
+
+<h2>Hardware Fixes</h2>
+
+
+<p>
+    The printer had a few notable issues: it was missing a print bed, the carriage was actually a cheap photo frame (seriously), and the previous owner had thought it was a good idea to hot glue the heating element in. Here&#8217;s a photo of the hot glued extruder mount.
+</p>
+
+
+<p><img class="postimg" src="http://tylerkrupicka.com/assets/prusa/hotglue.jpg" alt="hot glue"></p>
+
+<p>
+I fixed the issues with the glue in the extruder by designing and printing a bracket for the J-head extruder on a lab 3D printer. The bracket tightly holds the hot end in place vertically; it had previously just flopped around and fallen out when the hot end was heated. Which is why you don&#8217;t hold something hot with hot glue.
+</p>
+
+
+<p><img class="postimg" src="http://tylerkrupicka.com/assets/prusa/bracket.jpg" alt="bracket"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Fixing the Samsung Galaxy]]></title>
