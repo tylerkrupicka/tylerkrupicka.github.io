@@ -4,7 +4,7 @@
   <title><![CDATA[Tyler Krupicka]]></title>
   <link href="http://tylerkrupicka.com/atom.xml" rel="self"/>
   <link href="http://tylerkrupicka.com/"/>
-  <updated>2014-07-10T19:43:50-07:00</updated>
+  <updated>2014-07-11T10:08:13-07:00</updated>
   <id>http://tylerkrupicka.com/</id>
   <author>
     <name><![CDATA[Tyler Krupicka]]></name>
@@ -28,7 +28,7 @@
 
 
 
-<h2>Initial Problems</h2>
+<h2>Software Fixes</h2>
 
 
 <p>
@@ -54,6 +54,52 @@ I fixed the issues with the glue in the extruder by designing and printing a bra
 
 
 <p><img class="postimg" src="http://tylerkrupicka.com/assets/prusa/bracket.jpg" alt="bracket"></p>
+
+<p>
+    After fixing the x-axis and installing the bracket I noticed that the carriage for the y-axis was held together by hot glue as well. On closer inspection, I realized that the carriage was actually a cheap picture frame held together by glue and a few staples.
+</p>
+
+
+<p><img class="postimg" src="http://tylerkrupicka.com/assets/prusa/frame.jpg" alt="frame"></p>
+
+<p>
+    With some help and suggestions from friends working in the lab, I ended up laser cutting a particle board replacement for the photo frame. It turned out pretty well, but somehow I accidentally scaled it down while cutting so the holes for mounting the heated bed are too close to the edge.
+</p>
+
+
+<p><img class="postimg" src="http://tylerkrupicka.com/assets/prusa/carriage.jpg" alt="carriage"></p>
+
+<p>
+    I also needed to put a print surface over the heated bed on the printer. A friend in the lab introduced me to Garolite, a type of plastic that sticks to ABS well, and found a piece that I could use. I used a vertical band saw to cut it to size and then drilled holes for the mount. Additionally, I got some springs to fit underneath the bed so it can be easily leveled.
+</p>
+
+
+<p><img class="postimg" src="http://tylerkrupicka.com/assets/prusa/garolite.jpg" alt="garolite"></p>
+
+<h2>Calibration</h2>
+
+
+<p>
+    After completing all of the crucial hardware fixes, I was able to spend some time zeroing the printer and doing calibration prints. I found that my timing belt on the y-axis was too angled at the ends, so I made some new timing belt clamps and a friend made a new pulley. 
+</p>
+
+
+<p><img class="postimg" src="http://tylerkrupicka.com/assets/prusa/calibration.jpg" alt="calibration"></p>
+
+<p>
+    I then worked on correcting the scale of the prints, making sure each axis was moving correct distances. This took some time but eventually they moved set distances reliably. Unfortunately, I was only able to do a few short calibration prints after that before having to store the printer for the summer. I&#8217;ll have the opportunity to test out some larger prints when I return to school in August.
+</p>
+
+
+
+
+<h2>Thanks</h2>
+
+
+<p>
+    I would never have been able to complete so much work on the printer without the help and resources of a lot of people in the lab at RIT. They helped me out even when I wasn&#8217;t confident that I could fix any part of it, and that was exactly what I needed. 
+</p>
+
 ]]></content>
   </entry>
   
@@ -149,7 +195,36 @@ I fixed the issues with the glue in the extruder by designing and printing a bra
 
 
 
-<p>The strategy we ended up using didn&#8217;t end up looking in to future moves, or searching for complicated strategies. Instead it focused on creating a progression of board states that creates a win. In order to avoid revealing too much of our solution (for potential students who may have the same project) I won&#8217;t go in to detail. Quite simply, we defined a set of criteria for patterns on the board that lead to a win. Then we broke the pattern down in to stages, and tried to get the AI to create each stage sequentially and create opportunities. A demonstration of a match using the completed AI can be seen below.
+<p>The strategy we ended up using didn&#8217;t end up looking in to future moves, or searching for complicated strategies. Instead it focused on creating a progression of board states that creates a win. Here&#8217;s some examples:
+</p>
+
+
+
+
+<p>
+    1. <b>Winning</b>: Make a move if it creates a four-in-a-row.<br /><br />
+    
+    2. <b>Losing</b>: Discard moves where the opponent has an unblocked three-in-a-row or a four-in-a-row. Also discard any moves where they have intersecting two-in-a-rows. (I&#8217;ll discuss this.)<br /><br />
+
+    3. <b>Empty Rows</b>: Add points for each row where we have a piece and the opponent does not. Helps us start runs.<br /><br />
+    
+    4. <b>Pieces in Stacks</b>: Add points to a move if we have more pieces left than the opponent. We found this makes winning a long game more likely.<br /><br />
+    
+    5. <b>Gobbles</b>: Add points for each piece we have &#8220;gobbled&#8221; (covered up). We found that while creating runs it was useful to gobble as frequently as possible, because it ensures that we have more pieces on the board. Unfortunately, it also means you have more difficulty moving pieces because they might uncover opponent&#8217;s pieces.<br />
+</p>
+
+
+<p>
+    The final part of our strategy focuses on creating a scenario where we have two intersecting three-in-a-rows in order to win. When you create a single three-in-a-row, it is easy for your opponent to see you are going to win and block it. However, if you create two three-in-a-rows in the same turn it is impossible to block - giving you the win one turn later. In order to achieve this we added a few more rankings.
+</p>
+
+
+<p>
+    6. <b>Two-in-a-Rows</b>: Add a few points for creating (unblocked) two-in-a-rows somewhere.<br /><br />
+    
+    7. <b>Intersecting Two-in-a-Rows</b>: Add more points for creating two-in-a-rows that intersect.<br /><br />
+    
+    8. <b>Intersecting Three-in-a-Rows</b>: Add a substantial amount of points for creating intersecting three-in-a-rows.<br />
 </p>
 
 
