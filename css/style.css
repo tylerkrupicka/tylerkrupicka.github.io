@@ -10,6 +10,7 @@
 	background-color:#FFFFFF;
 	position:fixed;
 	width: 100%;
+	min-width:480px;
 	top:0;
 	height: 50px;
 	z-index: 1;
@@ -75,6 +76,7 @@ html {
 	margin-right:auto;
 	margin-top:20px;
 	padding-bottom:20px;
+	min-width:480px;
 }
 	
 #content{
@@ -84,6 +86,7 @@ html {
 	margin-right:auto;
 	margin-top:20px;
 	padding-bottom:20px;
+	min-width:480px;
 }
 
 #post-thumb{
