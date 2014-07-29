@@ -55,8 +55,9 @@ html {
 
 #page-wrap-all {
 	width:100%;
+	min-height:100%;
 	margin-top:0px;
-	background:rgba(232,232,232,.85);
+	background:rgba(232,232,232,.8);
 	-moz-box-shadow: 0 0 20px black;
 	-webkit-box-shadow: 0 0 20px black;
 	box-shadow: 0 0 20px black;
@@ -114,6 +115,7 @@ html {
 	background-color:#FFFFFF;
 	width: 100%;
 	bottom:0px;
+	position:relative;
 	height: 50px;
 	font-size:16px;
 	-moz-box-shadow: 0 0 20px black;
