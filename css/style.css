@@ -183,4 +183,11 @@ a:hover {text-decoration:underline;}
 			width: 100%;
 			max-width:none;
 		}
+		#about{
+			width: 100%;
+			max-width:none;
+	}
+		#tile{
+			width: 100%;
+			max-width:none;
 	}
