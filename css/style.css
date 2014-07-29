@@ -181,5 +181,6 @@ a:hover {text-decoration:underline;}
 
 		#content {
 			width: 100%;
+			max-width:none;
 		}
 	}
