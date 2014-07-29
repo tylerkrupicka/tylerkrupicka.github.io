@@ -175,6 +175,10 @@ a:hover {text-decoration:underline;}
 			visibility:hidden;
 		}
 
+		#page-wrap {
+			margin-top:600px;
+		}
+
 		#content {
 			width: 100%;
 			max-width:none;
