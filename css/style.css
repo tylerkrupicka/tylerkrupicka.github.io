@@ -191,3 +191,6 @@ a:hover {text-decoration:underline;}
 			width: 100%;
 			max-width:none;
 	}
+	#html{
+		background-image: url(../images/bg2.jpg);
+	}
