@@ -1,0 +1,17 @@
+Title: New Design and New Generator
+Date: 2014-07-29
+---
+<p>
+This site no longer uses Octopress/Jekyll; I decided to create my own site design and generator (written in Python). The site generator is called <a href="https://github.com/tylerkrupicka/staticky">Staticky</a> and fixes a lot of the issues I had with Octopress. This includes giving me full control of designing the site in HTML and CSS. 
+
+</p>
+
+<!-- more -->
+
+<p>
+	After a month of using Octopress, I begin to realize just how complicated it was only for the task of assembling my site. I wanted to be able to create a simple site layout and stylesheet and have the generator add posts and fill variables; not have so many files and directories that it was difficult to find styling for site elements. 
+</p>
+
+<p>
+	My new site has the appearance and simplicity I was originally looking for, and I'm excited to continue development of it.
+</p>
