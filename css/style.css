@@ -168,3 +168,18 @@ a:hover {text-decoration:underline;}
 	padding-bottom:20px;
 	width:100%;
 }
+
+@media only screen and (max-device-width: 480px) {
+
+		#nav {
+			visibility:hidden;
+		}
+
+		#page-wrap {
+			margin-top:0px;
+		}
+
+		#content {
+			width: 100%;
+		}
+	}
