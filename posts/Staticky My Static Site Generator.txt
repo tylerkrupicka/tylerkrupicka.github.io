@@ -18,6 +18,12 @@ Date: 2014-08-02
 <p>
 	Another feature of the generator is the ability to create the site from standard html layout files. The generator uses each layout as a template when creating the final index, all posts, and post pages. Having plain html templates and css styling simplifies the editing process for each page.
 </p>
+ 
+<h2>Simple Setup</h2>
+<p>
+	Another advantage of the generator is the simple setup and use. Staticky is a single python file that can be run (without use of a terminal) on any system with python. Just drop staticky.py and appropriate directories in to a folder and it is ready to go.
+
+</p> 
 
 <h2>Default Theme</h2>
 <p>
