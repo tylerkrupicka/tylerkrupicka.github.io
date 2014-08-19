@@ -101,14 +101,28 @@ html {
 
 #open{
 	text-align:center;
-	color:#FFFFFF;
+	color: #FFFFFF;
 	font-size:30px;
 	width:100%;
 	padding-top: 40px;
 	padding-bottom:40px;
 }
+
 #open a{
 	color:#FFFFFF;
+}
+
+#allposts{
+	text-align:center;
+	color: #000000;
+	font-size:30px;
+	width:100%;
+	padding-top: 10px;
+	padding-bottom:10px;
+}
+
+#allposts a{
+	color:#000000;
 }
 
 #footer{
