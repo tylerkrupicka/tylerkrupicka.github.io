@@ -216,6 +216,9 @@ a:hover {text-decoration:underline;}
 			height:100px;
 		}
 	html{
-		background-image: url(../images/bg2.jpg);
-		background-size:auto;
+		background-image: url(../images/bg.jpg);
+		background-repeat: no-repeat;
+		background-size: auto;
+		background-position: top;
+		background-attachment: fixed;
 	}
