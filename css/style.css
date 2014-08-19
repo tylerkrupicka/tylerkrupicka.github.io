@@ -193,6 +193,11 @@ a:hover {text-decoration:underline;}
 
 		#page-wrap {
 			margin-top:600px;
+			background: rgba(255,255,255,1.00);
+		}
+		
+		#spacer{
+			background: rgba(255,255,255,1.00);
 		}
 
 		#content {
