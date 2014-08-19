@@ -212,6 +212,10 @@ a:hover {text-decoration:underline;}
 			width: 100%;
 			max-width:none;
 	}
+		#footer{
+			height:100px;
+		}
 	html{
 		background-image: url(../images/bg2.jpg);
+		background-size:auto;
 	}
