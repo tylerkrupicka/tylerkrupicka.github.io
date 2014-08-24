@@ -41,6 +41,7 @@ I fixed the issues with the glue in the extruder by designing and printing a bra
 </p>
 
 <img id="postimg" src="http://tylerkrupicka.com/assets/prusa/garolite.jpg" alt="garolite">
+<img id="postimg" src="http://tylerkrupicka.com/assets/prusa/leveling.jpg" alt="leveling">
 
 <h2>Calibration</h2>
 <p>
