@@ -235,5 +235,5 @@ a:hover {text-decoration:underline;}
 			max-width:none;
 		}
 		html{
-			background-size:auto;
+			background-size:contain;
 		
