@@ -51,6 +51,7 @@ html {
 	background-image: url(../images/bg.jpg);
 	background-repeat: no-repeat;
 	background-size:auto;
+	margin-top:0px;
 	background-position: center;
 	background-attachment: fixed;
 	font-family:'Lato', sans-serif;
