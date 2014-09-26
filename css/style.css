@@ -235,6 +235,7 @@ a:hover {text-decoration:underline;}
 			max-width:none;
 		}
 		html{
-			background-size:auto;
+			background-position:top;
+			height:60vh;
 		}
 		
