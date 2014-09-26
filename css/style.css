@@ -1,23 +1,50 @@
 @charset "utf-8";
 /* CSS Document */
 
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
-#nav {
-	background-color:#FFFFFF;
-	position:fixed;
-	width: 100%;
-	min-width:480px;
-	top:0;
-	height: 50px;
-	z-index: 1;
-	-moz-box-shadow: 0 0 20px black;
-	-webkit-box-shadow: 0 0 20px black;
-	box-shadow: 0 0 20px black;
+
+#hero{
+	text-align:center;
+	max-width:800px;
+	min-width:400px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:25vh;
 	font-family: 'Lato', sans-serif;
+}
+
+#title{
+	font-size:60px;
+	font-weight:700;
+	text-align:center;
+	color:rgba(255,255,255,1.00);
+}
+
+#subtitle{
+	padding-top:10px;
+	font-size:24px;
+	font-weight:400;
+	text-align:center;
+	color:rgba(255,255,255,1.00);
+}
+
+#heroicon{
+	height:50px;
+	width:50px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:15px;
+	padding-left:5px;
+	padding-right:5px;
+	display:inline-block;
+	
 }
 
 html {
@@ -45,8 +72,8 @@ html {
 
 #page-wrap {
 	width:100%;
-	margin-top:400px;
-	background:rgba(232,232,232,.85);
+	margin-top:35vh;
+	background:rgba(232,232,232,.95);
 	-moz-box-shadow: 0 0 20px black;
 	-webkit-box-shadow: 0 0 20px black;
 	box-shadow: 0 0 20px black;
@@ -187,12 +214,7 @@ a:hover {text-decoration:underline;}
 
 @media only screen and (max-device-width: 480px) {
 
-		#nav {
-			visibility:hidden;
-		}
-
 		#page-wrap {
-			margin-top:600px;
 			background: rgba(255,255,255,1.00);
 		}
 		
@@ -211,10 +233,4 @@ a:hover {text-decoration:underline;}
 		#tile{
 			width: 100%;
 			max-width:none;
-	}
-
-	html{
-		background-image: url(../images/bg.jpg);
-		background-size:100% 720px;
-		background-position:top left;
 	}
