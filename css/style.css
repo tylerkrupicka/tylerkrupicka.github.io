@@ -127,6 +127,13 @@ html {
 	padding-top:30px;
 	padding-bottom:30px;
 }
+#readon{
+	float:right;
+	font-size:18px;
+	padding-right:30px;
+	padding-left:30px;
+}
+
 
 #open{
 	text-align:center;
@@ -248,6 +255,9 @@ a:hover {text-decoration:underline;}
 		}
 		#back{
 			background-image: url(../images/bg_mobile.jpg);
+		}
+		#readon{
+			font-size:24px;
 		}
 		#heroicon{
 			height:90px;
