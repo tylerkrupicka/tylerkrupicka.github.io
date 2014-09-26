@@ -9,6 +9,15 @@
 	padding: 0;
 }
 
+#back{
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-position:top;
+	background-attachment: fixed;
+	min-width:100%;
+	max-width:100%;
+	min-height:80vh;
+}
 
 #hero{
 	text-align:center;
@@ -16,7 +25,7 @@
 	min-width:400px;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:25vh;
+	padding-top:25vh;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -48,12 +57,6 @@
 }
 
 html {
-	background-image: url(../images/bg.jpg);
-	background-repeat: no-repeat;
-	background-size:auto;
-	margin-top:0px;
-	background-position: center;
-	background-attachment: fixed;
 	font-family:'Lato', sans-serif;
 }
 
@@ -73,7 +76,6 @@ html {
 
 #page-wrap {
 	width:100%;
-	margin-top:35vh;
 	background:rgba(232,232,232,.95);
 	-moz-box-shadow: 0 0 20px black;
 	-webkit-box-shadow: 0 0 20px black;
