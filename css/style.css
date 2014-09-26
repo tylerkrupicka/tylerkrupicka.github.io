@@ -235,7 +235,6 @@ a:hover {text-decoration:underline;}
 			max-width:none;
 		}
 		html{
-			background-position:top;
-			height:60vh;
+			background-image: url(../images/bg_mobile.jpg);
 		}
 		
