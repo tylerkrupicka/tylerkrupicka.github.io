@@ -229,8 +229,11 @@ a:hover {text-decoration:underline;}
 		#about{
 			width: 100%;
 			max-width:none;
-	}
+		}
 		#tile{
 			width: 100%;
 			max-width:none;
-	}
+		}
+		html{
+			background-size:auto;
+		
