@@ -240,4 +240,8 @@ a:hover {text-decoration:underline;}
 		#back{
 			background-image: url(../images/bg_mobile.jpg);
 		}
+		#heroicon{
+			height:150px;
+			width:150px;
+		}
 		
