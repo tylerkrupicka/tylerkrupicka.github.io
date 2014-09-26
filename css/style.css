@@ -75,7 +75,7 @@ html {
 
 #page-wrap {
 	width:100%;
-	background:rgba(232,232,232,.95);
+	background:rgba(232,238,244,.95);
 	-moz-box-shadow: 0 0 20px black;
 	-webkit-box-shadow: 0 0 20px black;
 	box-shadow: 0 0 20px black;
@@ -86,7 +86,7 @@ html {
 	width:100%;
 	min-height:100%;
 	margin-top:0px;
-	background:rgba(232,232,232,.8);
+	background:rgba(232,238,244,.95);
 	-moz-box-shadow: 0 0 20px black;
 	-webkit-box-shadow: 0 0 20px black;
 	box-shadow: 0 0 20px black;
@@ -95,7 +95,7 @@ html {
 
 #spacer{
 	width:100%;
-	background:rgba(232,232,232,.9);
+	background:rgba(243,243,243,.9);
 	height:40px;
 }
 
@@ -155,16 +155,26 @@ html {
 }
 
 #footer{
-	background-color:#FFFFFF;
+	background:rgba(232,238,244,1);
 	width: 100%;
 	bottom:0px;
 	position:relative;
-	height: 50px;
-	font-size:16px;
-	-moz-box-shadow: 0 0 20px black;
-	-webkit-box-shadow: 0 0 20px black;
-	box-shadow: 0 0 20px black;
+	height: 100px;
+	font-size:20px;
+	text-align:center;
 	font-family: 'Lato', sans-serif;
+}
+
+#footericon{
+	height:30px;
+	width:30px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:15px;
+	padding-left:5px;
+	padding-right:5px;
+	display:inline-block;
+	
 }
 
 #date{
@@ -242,6 +252,10 @@ a:hover {text-decoration:underline;}
 		#heroicon{
 			height:90px;
 			width:90px;
+		}
+		#footericon{
+			height:50px;
+			width:50px;
 		}
 		#title{
 			font-size:80px;
