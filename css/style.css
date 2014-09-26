@@ -55,6 +55,14 @@
 	
 }
 
+#heroicon:hover{
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform:scale(1.1,1.1);
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+}
+
 html {
 	font-family:'Lato', sans-serif;
 }
@@ -181,7 +189,6 @@ html {
 	padding-left:5px;
 	padding-right:5px;
 	display:inline-block;
-	
 }
 
 #date{
