@@ -1,7 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 
 * {
@@ -241,7 +240,9 @@ a:hover {text-decoration:underline;}
 			background-image: url(../images/bg_mobile.jpg);
 		}
 		#heroicon{
-			height:100px;
-			width:100px;
+			height:90px;
+			width:90px;
 		}
-		
+		#title{
+			font-size:80px;
+		}
