@@ -6,11 +6,11 @@ Date: 2014-07-02
 </p>
 <!-- more -->
 
-<img id="postimg" src="http://tylerkrupicka.com/images/kitkat/kitkat.jpg" alt="kitkat">
+<img id="postimg" src="http://tylerkrupicka.com/assets/kitkat/kitkat.jpg" alt="kitkat">
 
 <h2>Google Now Launcher</h2>
 <p>
-	Touchwiz (the Samsung touch interface) manages to be one of the most feature rich skins of Android, without being particularly useful or visually appealing. Meanwhile, Google did a great job with the latest KitKat Launcher: Google Now integration, voice search, transparencies, and a clean UI. I've found the stock Google launcher to be a much better Android experience, and it is possible to get it on any KitKat phone.
+	Touchwiz (the Samsung touch interface) manages to be one of the most feature rich skins of Android, without being particularly useful or visually appealing. Meanwhile, Google did a great job with the latest KitKat Launcher: Google Now integration, voice search, transparencies, and a clean UI. I've found the stock Google launcher to be a much better Android experience, and it is possible to get it on any KitKat phone. 
 </p>
 
 <p>

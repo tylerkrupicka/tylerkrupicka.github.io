@@ -2,12 +2,12 @@ Title: Staticky: My Static Site Generator
 Date: 2014-08-02
 ---
 <p>
-	These last few weeks I went through a full site re-design, in the process making my own site generator called <a href="https://github.com/tylerkrupicka/staticky">Staticky</a> to propagate all the new site layouts. I wanted it to have all of the core features of Jekyll/Octopress, but make creating a site and customization much easier.
+	These last few weeks I went through a full site re-design, in the process making my own site generator called <a href="https://github.com/tylerkrupicka/staticky">Staticky</a> to propagate all the new site layouts. I wanted it to have all of the core features of Jekyll/Octopress, but make creating a site and customization much easier. 
 </p>
 
 <!-- more -->
 
-<img id="postimg" src="http://tylerkrupicka.com/images/staticky/loadposts.jpg" alt="load posts">
+<img id="postimg" src="http://tylerkrupicka.com/assets/staticky/loadposts.jpg" alt="load posts">
 
 <h2>Custom Variables</h2>
 <p>
@@ -18,12 +18,12 @@ Date: 2014-08-02
 <p>
 	Another feature of the generator is the ability to create the site from standard html layout files. The generator uses each layout as a template when creating the final index, all posts, and post pages. Having plain html templates and css styling simplifies the editing process for each page.
 </p>
-
+ 
 <h2>Simple Setup</h2>
 <p>
 	Another advantage of the generator is the simple setup and use. Staticky is a single python file that can be run (without use of a terminal) on any system with python. Just drop staticky.py and appropriate directories in to a folder and it is ready to go.
 
-</p>
+</p> 
 
 <h2>Default Theme</h2>
 <p>
