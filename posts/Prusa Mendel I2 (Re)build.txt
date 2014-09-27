@@ -16,39 +16,39 @@ Date: 2014-07-10
 	The printer had a few notable issues: it was missing a print bed, the carriage was actually a cheap photo frame (seriously), and the previous owner had thought it was a good idea to hot glue the heating element in. Here's a photo of the hot glued extruder mount.
 </p>
 
-<img id="postimg" src="http://tylerkrupicka.com/images/prusa/hotglue.jpg" alt="hot glue">
+<img id="postimg" src="http://tylerkrupicka.com/assets/prusa/hotglue.jpg" alt="hot glue">
 
 <p>
 I fixed the issues with the glue in the extruder by designing and printing a bracket for the J-head extruder on a lab 3D printer. The bracket tightly holds the hot end in place vertically; it had previously just flopped around and fallen out when the hot end was heated. Which is why you don't hold something hot with hot glue.
 </p>
 
-<img id="postimg" src="http://tylerkrupicka.com/images/prusa/bracket.jpg" alt="bracket">
+<img id="postimg" src="http://tylerkrupicka.com/assets/prusa/bracket.jpg" alt="bracket">
 
 <p>
 	After fixing the x-axis and installing the bracket I noticed that the carriage for the y-axis was held together by hot glue as well. On closer inspection, I realized that the carriage was actually a cheap picture frame held together by glue and a few staples.
 </p>
 
-<img id="postimg" src="http://tylerkrupicka.com/images/prusa/frame.jpg" alt="frame">
+<img id="postimg" src="http://tylerkrupicka.com/assets/prusa/frame.jpg" alt="frame">
 
 <p>
 	With some help and suggestions from friends working in the lab, I ended up laser cutting a particle board replacement for the photo frame. It turned out pretty well, but somehow I accidentally scaled it down while cutting so the holes for mounting the heated bed are too close to the edge.
 </p>
 
-<img id="postimg" src="http://tylerkrupicka.com/images/prusa/carriage.jpg" alt="carriage">
+<img id="postimg" src="http://tylerkrupicka.com/assets/prusa/carriage.jpg" alt="carriage">
 
 <p>
 	I also needed to put a print surface over the heated bed on the printer. A friend in the lab introduced me to Garolite, a type of plastic that sticks to ABS well, and found a piece that I could use. I used a vertical band saw to cut it to size and then drilled holes for the mount. Additionally, I got some springs to fit underneath the bed so it can be easily leveled.
 </p>
 
-<img id="postimg" src="http://tylerkrupicka.com/images/prusa/garolite.jpg" alt="garolite">
-<img id="postimg" src="http://tylerkrupicka.com/images/prusa/leveling.jpg" alt="leveling">
+<img id="postimg" src="http://tylerkrupicka.com/assets/prusa/garolite.jpg" alt="garolite">
+<img id="postimg" src="http://tylerkrupicka.com/assets/prusa/leveling.jpg" alt="leveling">
 
 <h2>Calibration</h2>
 <p>
-	After completing all of the crucial hardware fixes, I was able to spend some time zeroing the printer and doing calibration prints. I found that my timing belt on the y-axis was too angled at the ends, so I made some new timing belt clamps and a friend made a new pulley.
+	After completing all of the crucial hardware fixes, I was able to spend some time zeroing the printer and doing calibration prints. I found that my timing belt on the y-axis was too angled at the ends, so I made some new timing belt clamps and a friend made a new pulley. 
 </p>
 
-<img id="postimg" src="http://tylerkrupicka.com/images/prusa/calibration.jpg" alt="calibration">
+<img id="postimg" src="http://tylerkrupicka.com/assets/prusa/calibration.jpg" alt="calibration">
 
 <p>
 	I then worked on correcting the scale of the prints, making sure each axis was moving correct distances. This took some time but eventually they moved set distances reliably. Unfortunately, I was only able to do a few short calibration prints after that before having to store the printer for the summer. I'll have the opportunity to test out some larger prints when I return to school in August.
@@ -56,5 +56,5 @@ I fixed the issues with the glue in the extruder by designing and printing a bra
 
 <h2>Thanks</h2>
 <p>
-	I would never have been able to complete so much work on the printer without the help and resources of a lot of people in the lab at RIT. They helped me out even when I wasn't confident that I could fix any part of it, and that was exactly what I needed.
+	I would never have been able to complete so much work on the printer without the help and resources of a lot of people in the lab at RIT. They helped me out even when I wasn't confident that I could fix any part of it, and that was exactly what I needed. 
 </p>
