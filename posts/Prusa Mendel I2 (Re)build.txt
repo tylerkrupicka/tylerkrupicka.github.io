@@ -45,7 +45,7 @@ I fixed the issues with the glue in the extruder by designing and printing a bra
 
 <h2>Calibration</h2>
 <p>
-	After completing all of the crucial hardware fixes, I was able to spend some time zeroing the printer and doing calibration prints. I found that my timing belt on the y-axis was too angled at the ends, so I made some new timing belt clamps and a friend made a new pulley. 
+	After completing all of the crucial hardware fixes, I was able to spend some time zeroing the printer and doing calibration prints. I found that my timing belt on the y-axis was too angled at the ends, so I made some new timing belt clamps and a friend made a new pulley.
 </p>
 
 <img id="postimg" src="http://tylerkrupicka.com/assets/prusa/calibration.jpg" alt="calibration">
@@ -56,5 +56,5 @@ I fixed the issues with the glue in the extruder by designing and printing a bra
 
 <h2>Thanks</h2>
 <p>
-	I would never have been able to complete so much work on the printer without the help and resources of a lot of people in the lab at RIT. They helped me out even when I wasn't confident that I could fix any part of it, and that was exactly what I needed. 
+	I would never have been able to complete so much work on the printer without the help and resources of a lot of people in the lab at RIT. They helped me out even when I wasn't confident that I could fix any part of it, and that was exactly what I needed.
 </p>
