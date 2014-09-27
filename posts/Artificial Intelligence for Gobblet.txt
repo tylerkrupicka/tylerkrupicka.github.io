@@ -19,11 +19,11 @@ Date: 2014-06-24
 
 <p>
 	1. <b>Winning</b>: Make a move if it creates a four-in-a-row.<br /><br />
-	
+
 	2. <b>Losing</b>: Discard moves where the opponent has an unblocked three-in-a-row or a four-in-a-row. Also discard any moves where they have intersecting two-in-a-rows. (I'll discuss this.)<br /><br />
-	
+
 	3. <b>Pieces in Stacks</b>: Add points to a move if we have more pieces left than the opponent. We found this makes winning a long game more likely.<br /><br />
-	
+
 	4. <b>Gobbles</b>: Add points for each piece we have "gobbled" (covered up). We found that while creating runs it was useful to gobble as frequently as possible, because it ensures that we have more pieces on the board. Unfortunately, it also means you have more difficulty moving pieces because they might uncover opponent's pieces.<br />
 </p>
 <p>
@@ -31,9 +31,9 @@ Date: 2014-06-24
 </p>
 <p>
 	5. <b>Two-in-a-Rows</b>: Add a few points for creating (unblocked) two-in-a-rows somewhere.<br /><br />
-	
+
 	6. <b>Intersecting Two-in-a-Rows</b>: Add more points for creating two-in-a-rows that intersect.<br /><br />
-	
+
 	7. <b>Intersecting Three-in-a-Rows</b>: Add a substantial amount of points for creating intersecting three-in-a-rows.<br />
 </p>
 
@@ -44,5 +44,5 @@ Your browser does not support the video tag.
 
 <h2>Shortcomings</h2>
 <p>
-	The strategy we chose works well for basic gameplay and setting up useful situations, but it far from perfect. Most notably, the AI doesn't adapt to opposing playing styles -- instead focusing on forming set situations. Additionally, it often followed the same pattern each time it played another AI (no randomness). There's plenty of different scenarios to think about when designing these programs. 
+	The strategy we chose works well for basic gameplay and setting up useful situations, but it far from perfect. Most notably, the AI doesn't adapt to opposing playing styles -- instead focusing on forming set situations. Additionally, it often followed the same pattern each time it played another AI (no randomness). There's plenty of different scenarios to think about when designing these programs.
 </p>
