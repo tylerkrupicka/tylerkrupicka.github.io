@@ -24,7 +24,7 @@ Date: 2014-09-24
 <p>
 The belts attach two two screws on the slide and have adjustable tensioners on the top of the frame
 </p>
-<img id="postimg" src="http://tylerkrupicka.com/assets/kossel_build/slides_close.jpg" alt="slides">
+<img id="postimg" src="http://tylerkrupicka.com/assets/kossel_build/slide_close.jpg" alt="slides">
 
 <h2>Extruder</h2>
 <p>
