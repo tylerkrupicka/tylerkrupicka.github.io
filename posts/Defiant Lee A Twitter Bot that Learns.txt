@@ -4,6 +4,7 @@ Date: 2014-09-27
 <p>
      In the last week a friend pointed out how common it is for people to mistype "definitely" as "defiantly" on twitter, often because of autocorrect. I decided to try using the tweepy twitter library for python to create a twitter bot that responds to people when they make the mistake.
 </p>
+<p><a href="https://github.com/tylerkrupicka/DefiantLee">On Github</a> | <a href="https://twitter.com/DefiantLee_/with_replies">Twitter</a></p>
 <!-- more -->
 <img id="postimg" src="http://tylerkrupicka.com/assets/defiant/poll.jpg" alt="polling">
 <h2>Starting Out</h2>
