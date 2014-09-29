@@ -1,4 +1,4 @@
-pyng
+tylerkrupicka.com
 ====
 
-Stripped down static site generator in Python
+Personal blog using my static site generator.
