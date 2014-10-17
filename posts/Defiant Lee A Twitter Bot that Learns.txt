@@ -1,4 +1,4 @@
-Title: Defiant Lee: A Twitter Bot that Learns
+Title: Defiant Lee: A Naive Bayes Twitter Bot
 Date: 2014-09-27
 ---
 <p>
