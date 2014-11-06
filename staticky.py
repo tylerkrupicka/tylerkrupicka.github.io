@@ -163,6 +163,7 @@ class Pyng:
                 content = pl[1].split("<!-- more -->")
                 post.thumbContent = content[0]
                 post.content = pl[1]
+                filename = filename.replace(" ","-")
                 post.link = "blog/" + filename.strip(".txt") + ".html"
 
                 self.posts.append(post)
