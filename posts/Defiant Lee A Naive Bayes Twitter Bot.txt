@@ -39,3 +39,11 @@ For part of speech tagging, I used the NLTK Maxent part of speech tagger to labe
      After features were generated for every tweet in the corpus, I could then create and train a NLTK Naive Bayes classifier. I load each of the tweets in the correct and incorrect usage corpus and then use the classifier to classify future incoming tweets. This allows the program to only respond to tweets that it actually determines are incorrect. It's still not perfect, but it is very good at finding incorrect usage. Additionally, the classifier will get more and more accurate based on the constantly increasing data set.
 </p>
 <img id="postimg" src="http://tylerkrupicka.com/assets/defiant/british.jpg" alt="britishairlines">
+<h2>Update: A Good Run</h2>
+<p>
+A couple weeks (and about 12,000) tweets later, the bot's api key finally got taken away--pretty unsurprisingly. Twitter has gotten very strict on their rules and regulations regarding automation, which now prohibits interacting with users without their explicit permission. Bots like mine and the infamous <a href="https://twitter.com/StealthMountain">Stealth Mountain</a> don't fit in to these new restrictions, so it was only a matter of time before the key was removed. 
+</p>
+<p>
+@BestBuySupport will just have to start proofreading.
+</p>
+<img id="postimg" src="http://tylerkrupicka.com/assets/defiant/bestbuy2.jpg" alt="best buy mistake again">
