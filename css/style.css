@@ -83,7 +83,7 @@ html {
 
 #page-wrap {
 	width:100%;
-	background:rgba(232,238,244,.95);
+	background:rgba(202,221,240,.95);
 	-moz-box-shadow: 0 0 20px black;
 	-webkit-box-shadow: 0 0 20px black;
 	box-shadow: 0 0 20px black;
@@ -94,7 +94,7 @@ html {
 	width:100%;
 	min-height:100%;
 	margin-top:0px;
-	background:rgba(232,238,244,.95);
+	background:rgba(202,221,240,.95);
 	-moz-box-shadow: 0 0 20px black;
 	-webkit-box-shadow: 0 0 20px black;
 	box-shadow: 0 0 20px black;
@@ -170,7 +170,7 @@ html {
 }
 
 #footer{
-	background:rgba(232,238,244,1);
+	background:rgba(202,221,240,.95);
 	width: 100%;
 	bottom:0px;
 	position:relative;
@@ -196,6 +196,10 @@ html {
     opacity: 1;
     -webkit-opacity: 1;
     -moz-opacity: 1;
+}
+
+#footertext{
+	color: rgba(0,0,0,1);
 }
 
 #date{
