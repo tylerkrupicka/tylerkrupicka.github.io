@@ -261,14 +261,9 @@ a:hover {text-decoration:underline;}
 
 @media only screen and (max-device-width: 480px) {
 
-		#page-wrap {
-			background: rgba(255,255,255,1.00);
+		#hero{
+			padding-top:30vh;
 		}
-		
-		#spacer{
-			background: rgba(255,255,255,1.00);
-		}
-
 		#content {
 			width: 100%;
 			max-width:none;
@@ -282,7 +277,6 @@ a:hover {text-decoration:underline;}
 			max-width:none;
 		}
 		#back{
-			background-image: url(../images/bg_mobile.jpg);
 		}
 		#readon{
 			font-size:30px;
