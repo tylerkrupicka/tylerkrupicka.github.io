@@ -1,7 +1,7 @@
 url: http://tylerkrupicka.com
 year: 2014
 all_posts: allPosts.html
-title: Tyler Krupicka
+title: TYLER<br />KRUPICKA
 subtitle: Computer Engineer | Programmer | Designer
 author: Tyler Krupicka
 search: https://www.google.com/search
