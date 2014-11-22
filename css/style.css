@@ -2,44 +2,42 @@
 /* CSS Document */
 
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
-
 * {
 	margin: 0;
 	padding: 0;
 }
 
+html{
+	background-color: #0ac5f4;
+}
+
 #back{
-	background-image: url(../images/bg.jpg);
-	background-repeat: no-repeat;
-	background-position:top;
-	background-attachment: fixed;
 	min-width:100%;
 	max-width:100%;
 	min-height:80vh;
 }
 
 #hero{
-	text-align:center;
+	text-align:left;
 	max-width:800px;
 	min-width:400px;
 	margin-left:auto;
 	margin-right:auto;
-	padding-top:25vh;
+	padding-top:10vh;
 	font-family: 'Lato', sans-serif;
 }
 
 #title{
-	font-size:60px;
-	font-weight:700;
-	text-align:center;
+	font-size:140px;
+	font-weight:100;
+	text-align:left;
 	color:rgba(255,255,255,1.00);
 }
 
 #subtitle{
-	padding-top:10px;
-	font-size:24px;
-	font-weight:400;
-	text-align:center;
+	font-size:34px;
+	font-weight:300;
+	text-align:left;
 	color:rgba(255,255,255,1.00);
 }
 
@@ -48,9 +46,9 @@
 	width:50px;
 	margin-left:auto;
 	margin-right:auto;
-	padding-top:15px;
-	padding-left:5px;
-	padding-right:5px;
+	padding-top:25px;
+	padding-left:0px;
+	padding-right:20px;
 	display:inline-block;
 	
 }
@@ -170,6 +168,7 @@ html {
 	color: #000000;
 	font-size:30px;
 	width:100%;
+	font-weight: 300;
 	padding-top: 10px;
 	padding-bottom:10px;
 }
@@ -226,6 +225,7 @@ p {
 	padding-right:30px;
 	padding-top:30px;
 	padding-bottom:10px;
+	font-weight: 400;
 	color:#4E4E4E;
 }
 
@@ -234,7 +234,8 @@ h2{
 	padding-left:30px;
 	padding-right:30px;
 	padding-top:30px;
-	font-size: 30px;
+	font-size: 36px;
+	font-weight: 300;
 	text-decoration:none;
 	color:#000000;
 }
