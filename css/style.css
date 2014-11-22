@@ -262,7 +262,7 @@ a:hover {text-decoration:underline;}
 @media only screen and (max-device-width: 480px) {
 
 		#hero{
-			padding-top:30vh;
+			padding-top:20vh;
 		}
 		#content {
 			width: 100%;
@@ -295,5 +295,5 @@ a:hover {text-decoration:underline;}
 			width:60px;
 		}
 		#title{
-			font-size:80px;
+			font-size:160px;
 		}
