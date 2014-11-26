@@ -1,5 +1,6 @@
 Title: Staticky: My Static Site Generator
 Date: 2014-08-02
+Thumbnail: 
 ---
 <p>
 	These last few weeks I went through a full site re-design, in the process making my own site generator called <a href="https://github.com/tylerkrupicka/staticky">Staticky</a> to propagate all the new site layouts. I wanted it to have all of the core features of Jekyll/Octopress, but make creating a site and customization much easier. 

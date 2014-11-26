@@ -1,5 +1,6 @@
 Title: Getting Started: About This Site
 Date: 2014-06-21
+Thumbnail: 
 ---
 <p>The last few weeks I've been working on developing this website as a place to post projects and thoughts as well as get more experience with web development. It's finally at a point where I'm content with the styling and layout (for the moment) so I thought it would be good to post some of what I've learned so far.</p>
 <!-- more -->
