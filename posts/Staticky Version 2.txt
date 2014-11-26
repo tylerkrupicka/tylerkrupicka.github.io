@@ -3,7 +3,7 @@ Date: 2014-11-26
 Thumbnail: 
 ---
 <p>
-	Today I made some major updates to the staticky site generator that my site runs on, to allow for a wide variety of sites to be created with it. Previously, the generator was tailored to providing only the functionality that this site needed, without allowing much creativity in site layout. I also added features for starting a new project.
+	Today I made some major updates to the staticky site generator that my site runs on, to allow for a wide variety of sites to be created with it. Previously, the generator was tailored to providing only the functionality that this site needed, without allowing much creativity in site layout. 
 	<p><a href="https://github.com/tylerkrupicka/staticky">On Github</a></p>
 </p>
 <!-- more -->
@@ -11,7 +11,7 @@ Thumbnail:
 
 <h2>Setup</h2>
 <p>
-The first new feature I added is a setup routine, which only runs in a near empty directory. This function automatically sets up base folders and files in the project, so that everything is in the correct place and named correctly. Now creating a functioning blank site takes seconds, which will greatly simplify creating other projects populated by staticky.
+The first new feature I added is a setup routine, which only runs in a near empty directory. This function automatically sets up base folders and files in the project, so that everything is in the correct place and named correctly. Now creating a functioning (blank) site takes seconds, which will greatly simplify creating other sites populated by staticky.
 </p>
 
 <h2>Elements</h2>
