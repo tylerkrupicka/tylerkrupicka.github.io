@@ -1,5 +1,6 @@
 Title: Prusa Mendel I2 (Re)build
 Date: 2014-07-10
+Thumbnail: 
 ---
 <p>
 	This spring I purchased a partially completed Prusa Mendel i2 hobby 3D printer from another student at RIT. On initial inspection the printer looked fully assembled, but didn't have the correct software. In all actuality, there was still quite a bit to fix before it would be ready to print.

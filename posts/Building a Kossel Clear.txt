@@ -1,5 +1,6 @@
 Title: Building a Kossel Clear
 Date: 2014-09-24
+Thumbnail: 
 ---
 <p>
      Over the summer I bought a  set of parts to build a delta configuration Kossel 3D printer with an acrylic frame from Blue Eagle Labs. The kit uses over the shelf slides and bearings and the Ramps 1.4 shield for the Arduino Mega, to create a easily modifiable printer with an impressive print volume.

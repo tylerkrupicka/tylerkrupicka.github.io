@@ -1,5 +1,6 @@
 Title: Artificial Intelligence for Gobblet
 Date: 2014-06-24
+Thumbnail: 
 ---
 <p>Recently I had the opportunity to design an AI to play the board game "Gobblet" for a team-based class project. At the end of the project all of the AIs entered in to a tournament against each other to determine which strategies were the most effective. My team's AI ended up making it to the department finals; performing well against a variety of Gobblet strategies. Here I'm going to explain the basis of how our AI player was designed.</p>
 <!-- more -->

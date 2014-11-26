@@ -1,5 +1,6 @@
 Title: Defiant Lee: A Naive Bayes Twitter Bot
 Date: 2014-09-27
+Thumbnail: 
 ---
 <p>
      In the last week a friend pointed out how common it is for people to mistype "definitely" as "defiantly" on twitter, often because of autocorrect. I decided to try using the tweepy twitter library for python to create a twitter bot that responds to people when they make the mistake.
