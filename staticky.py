@@ -52,7 +52,9 @@ class Staticky:
         while True:
             time.sleep(2)
             self.getConfig()
+            self.loadElements()
             self.loadPosts()
+            self.createPosts()
             self.createPages()        
     
     def generate(self):
@@ -112,15 +114,13 @@ class Staticky:
                 #propigate page
                 for a in file:
                     page += a
-                #replace config keywords
-                for key in self.dict:
-                    page = page.replace('[[' + key + ']]',self.dict[key])
                 #thumbs
                 self.createThumbs()
                 #limit page length
                 limitThumbs = ""
                 for i in range(int(self.dict["num_thumb"])):
-                    limitThumbs += self.thumbs[i]
+                    if len(self.thumbs) >= i-1 and len(self.thumbs) != 0:
+                        limitThumbs += self.thumbs[i]
                 #all thumbs
                 allThumbs = ""
                 for thumb in self.thumbs:
@@ -132,6 +132,10 @@ class Staticky:
                 for element in self.elements:
                     page = page.replace('[[' + element + ']]',self.elements[element])
 
+                #replace config keywords
+                for key in self.dict:
+                    page = page.replace('[[' + key + ']]',self.dict[key])
+                
                 #create file
                 f = open(filename,'a',encoding="utf8")
                 f.seek(0)
@@ -209,7 +213,7 @@ class Staticky:
         filename = ''.join(c for c in title if c in self.valid_chars)
         os.chdir("posts")
         file=open(filename+".txt", "a")
-        file.write("Title: " + title + "\n" + "Date: " + date + "\n" + "Thumbnail: " + thumbnail + "\n---\n")
+        file.write("Title: " + title + "\n" + "Date: " + date + "\n" + "Thumbnail: " + thumbnail + "\n---\n\n<!-- more -->\n")
         file.close()
         os.chdir("..")
         print("Post file created. Be careful editing the post header formatting.")
@@ -224,7 +228,7 @@ class Staticky:
         print("Page created in the layouts folder.")
         
     def setup(self):
-        if len(os.listdir(".")) == 1:
+        if len(os.listdir(".")) <= 3:
             choice = input("Setup Directory? (y/n): ")
             if choice == "y":
                 os.mkdir("blog")
