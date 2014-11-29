@@ -10,6 +10,6 @@ github: http://www.github.com/tylerkrupicka
 twitter: http://twitter.com/tkrupicka
 google+: https://plus.google.com/+TylerKrupickaT
 thingiverse: http://thingiverse.com/tylerkrupicka
-linkedin: http://www.linkedin.com/pub/tyler-krupicka/a4/a66/380
+linkedin: http://www.linkedin.com/in/tylerkrupicka
 resume: http://tylerkrupicka.com/assets/resume.pdf
 google_analytics_id: UA-51635607-1
