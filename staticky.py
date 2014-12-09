@@ -135,6 +135,8 @@ class Staticky:
                 #replace config keywords
                 for key in self.dict:
                     page = page.replace('[[' + key + ']]',self.dict[key])
+
+                page += "<!--Generated Using Staticky, by Tyler Krupicka -->"
                 
                 #create file
                 f = open(filename,'a',encoding="utf8")
@@ -194,6 +196,7 @@ class Staticky:
             pL = pL.replace('[[post.content]]',post.content)
             pL = pL.replace('[[post.link]]',post.link)
             pL = pL.replace('[[post.thumbnail]]',post.thumbnail)
+            pL += "<!--Generated Using Staticky, by Tyler Krupicka -->"
         
             postFile = open(post.link,'a',encoding="utf8")
             postFile.seek(0)
