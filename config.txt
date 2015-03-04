@@ -7,7 +7,7 @@ num_thumb: 5
 about: Hello, my name is Tyler Krupicka.<br />I'm a programmer, machinist, and 3D printer enthusiast from Newberg, Oregon. I'm currently studying computer engineering at Rochester Institute of Technology in Rochester, New York. This site was built from scratch; allowing me to post links, projects, and general interests.
 email: tyler.krupicka13@gmail.com
 github: http://www.github.com/tylerkrupicka
-twitter: http://twitter.com/tkrupicka
+twitter: http://twitter.com/tylerkrupicka
 google+: https://plus.google.com/+TylerKrupickaT
 thingiverse: http://thingiverse.com/tylerkrupicka
 linkedin: http://www.linkedin.com/in/tylerkrupicka
