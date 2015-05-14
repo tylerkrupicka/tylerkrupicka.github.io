@@ -7,7 +7,7 @@ Thumbnail:
 </p>
 <!-- more -->
 
-  <img id="postimg" src="http://tylerkrupicka.com/assets/defiant/digitalocean.jpg" alt="polling">
+  <img id="postimg" src="http://tylerkrupicka.com/assets/defiant/digitalocean.png" alt="polling">
 
 <h2>100% CPU</h2>
 <p>
