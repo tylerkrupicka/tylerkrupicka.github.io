@@ -1,0 +1,8 @@
+Title: To San Diego
+Date: 2015-05-01
+Thumbnail:
+---
+<p>
+  It's official. This summer and fall I will be on co-op as a software engineer for Intuit Inc. in San Diego. I've been assigned a department within the TurboTax division, and I'm really looking forward to joining the team. 
+</p>
+<!-- more -->
