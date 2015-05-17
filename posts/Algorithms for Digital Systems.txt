@@ -22,7 +22,7 @@ Thumbnail:
 <p>
   The final simplified table is shown below.
 </p>
-<img id="postimg" src="http://tylerkrupicka.com/assets/dsd/simplifed.png" alt="state table">
+<img id="postimg" src="http://tylerkrupicka.com/assets/dsd/simplified.png" alt="state table">
 <p>
   <b><i>My Implementation</b></i><br /><br />
   For my algorithm implementation, I used python file IO to read in the state table and create "State" objects. Initially, the states are moved in to "Group" objects based on their output; I then created a function that could be called repeatedly to split groupings based on their transitions. When the program finds no more possible groupings that have inconsistent states, it formats and prints a table of the simplifed groups. Some sample output is shown below.

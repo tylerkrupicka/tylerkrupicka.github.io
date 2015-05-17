@@ -1,6 +1,62 @@
 Title: Parrot AR Drone 2 Challenge
 Date: 2015-05-16
-Thumbnail: 
+Thumbnail:
 ---
-
+<p>
+I recently competed in a team autonomous drone challenge for the "RIT Meets the Jetsons" event during Imagine RIT. The team placed second, using the Parrot AR Drone 2 camera to autonomously recognize Jetsons characters and perform aerial maneuvers. We placed second overall in the event--winning one of RIT President Destler's 125 year old antique banjos.
+</p>
+<p><a href = "https://github.com/tylerkrupicka/ARChallenge">On Github</a></p>
 <!-- more -->
+<h2>Amazing Resources</h2>
+<p>
+  The AR Drone is a very closed source platform with limited capabilites, however, we found some useful libraries and tutorials that make flying the drone and using computer vision possible.
+</p>
+<p>
+  <b>1.</b> <a href="https://github.com/felixge/node-ar-drone">Node AR Drone</a><br />This library provides a useful wrapper for the drone commands using Node.js. It's nothing with very fine control, but it allows basic flight within the scope of our demonstration.
+
+</p>
+<p>
+<b>2.</b> <a href="http://www.nodecopter.com/">Nodecopter</a><br />
+A site for enthusisasts who program their AR Drones to do autonomous tasks. They maintain the Node.js library.
+
+</p>
+<p>
+<b>3.</b> <a href="http://eschnou.github.io/ardrone-webflight/">Webflight</a><br />A great package for controlling the drone through the browser. It has flight control using the keyboard and controllers, although we could never get the gamepad to work.
+
+</p>
+<p>
+<b>4.</b> <a href="https://github.com/peterbraden/node-opencv">Node OpenCV</a><br />
+A wrapper for OpenCV in Node.js, which allowed us to make classifications in our drone controlling program.
+
+</p>
+<p>
+<b>5.</b> <a href="https://github.com/mrnugget/opencv-haar-classifier-training">Haar Training with OpenCV</a><br />
+A repository for creating Haar Cascades.
+
+</p>
+<p>
+<b>6.</b> <a href="http://www.trevorsherrard.com/Haar_training.html">Trevor Sherrard's Haar Training Tutorial</a><br />
+Trevor has a really fantastic tutorial on how to create a Haar Cascade XML using OpenCV. He helped us out by making suggestions on picture resolution and parameters for creating the xml.
+</p>
+
+<h2>Using Node</h2>
+<p>
+  I learned a lot of Node.js while creating the autonomous program for this event. The program uses ar-drone to create a drone client which can be used for flight controls and creating a png stream. The Node.js "setInterval" command was used to repeatedly refresh the latest png and run the four classifiers for each of the Jetson's family.
+</p>
+
+<p>
+  <b><i>Error Handling</i></b><br />
+  We initially had a lot of issues with false positives in the days leading up the event, causing a lot of concern about being able to reliably detect specific characters. The solution ended up being two parts: using buffering and OpenCV filtering parameters.
+</p>
+<p>
+  Buffering was a simple fix that I implemented to ignore false positives by requiring multiple detections before acting. Every time a character was detected, their buffer increased by one until they reached 5. If they weren't detected at any point the buffer reset to weed out small bursts of false detection.
+</p>
+<p>
+  The Node OpenCV wrapper provides some filtering parameters for the "detectObject" function which performs detection using our created Haar Cascade XML files. I found that the most useful was the "neighbors" parameter, which limits matching to points that were detected in multiple passes of the cascade. Increasing the neighbors requirement to 1 and 2 significantly reduced noise when classifying.
+</p>
+
+<h2>Haar Training</h2>
+ <p>
+  In order to detect an image using OpenCV we had to create Haar Cascade files that were trained using images of the object we were trying to detect. For each of the Jetsons family members, we took approximately 40 images using a camera with different backgrounds and lighting conditions.</p>
+  <p> Initially, we tried to feed the Haar training program these images in their original form which was a huge mistake. The 8-megapixel images were going to take days to classify, and we also needed to crop them down to just represent what we wanted to detect. After making these corrections and allocating more RAM to the process we were able to cut the classification to around 7 hours. We found that 20 passes yielded the best classification for our application.
+ </p>
