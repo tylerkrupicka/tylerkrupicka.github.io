@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Algorithms for Digital Systems</title>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href="http://tylerkrupicka.com/images/favicon.png">
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51635607-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+ </script>
+
+</head>
+
+<body>
+
+<div id="page-wrap-all">
+  <div id="spacer"><div id="post-home"><a href="http://tylerkrupicka.com">&larr;Home</a></div></div>
+  
+  <div id="content">
+   <h2>Algorithms for Digital Systems</h2>
+    <div id="date">written 2015-05-16</div>
+    <p>As part of my Digital Systems Design II course, I completed an optional assignment implementing algorithms for automating some digital design tasks. The first program algorithmically solves state transition tables when designing state machine circuits. The second generates a minimized set of test vectors for a ciruit using path sensitization.</p><!-- more --><h2>Simplifying State Machines</h2><p>Simplifying state transitions is a fairly straightforward process, aiming to minimize the number of states necessary to perform a function. A sample state table is shown below, which shows where each state will transition depending on whether the input is a 1 or a 0. Additionally, the functional output of the circuit is shown for each state.</p><img id="postimg" src="http://tylerkrupicka.com/assets/dsd/table.png" alt="state table"><p>The process of simplifying this table is broken up in to two steps: grouping states and identifying redundant functionality.The initial step of grouping states is done by outputs; in this case A, B, and D would be grouped with output 1 while the others would be grouped as output 0.</p><p>After the initial grouping a looping reduction is used to individually simplify states. Look at each state and see which group it transitions to for each input. In the above example, all of the states within the original "output of 1" stay within the group when w = 0 and transition to the "output of 0" group when w = 1. The "output of 0" group has some issues, however. While most of the states (C, E, G) all stay within the group for both possible inputs, F transitions to the "output of 1" group when w = 1. In this case, the algorithm dictates that F become its own group and the process be repeated to find any other differences now that each state can transition to 3 groups.<br /><br />This process repeats until no further groups can be divided, and each group becomes a single simplified state.</p><p>The final simplified table is shown below.</p><img id="postimg" src="http://tylerkrupicka.com/assets/dsd/simplifed.png" alt="state table"><p><b><i>My Implementation</b></i><br /><br />For my algorithm implementation, I used python file IO to read in the state table and create "State" objects. Initially, the states are moved in to "Group" objects based on their output; I then created a function that could be called repeatedly to split groupings based on their transitions. When the program finds no more possible groupings that have inconsistent states, it formats and prints a table of the simplifed groups. Some sample output is shown below.</p><img id="postimg" src="http://tylerkrupicka.com/assets/dsd/state1.png" alt="output"><h2>Minimizing Test Vectors</h2><p>The next program I wrote created a minimized set of vectors to test for single stuck-at-faults. Single stuck-at-faults are broken interconnections that are caused by issues in manufacturing; every connection, input, and output in the circuit has the possibility of having either a stuck-at-0 or stuck-at-1 fault. A good test input will find these by making the output of the circuit be incorrect if there is a fault.</p><p><b><i>Path Sensitization</b></i><br /><br />Path sensitization is the input to a circuit makes the output a function of the input. For example, if you have a single input circuit there are two sensitized test vectors: when the input and output are one and when the input and output are zero. Every input adds two more sensitized vectors, each when the output matches the sensitized input bit. An important concept to note is that the pairs of sensitized vectors have to be one bit apart; for example, "000" and "100" could both be sensitized vectors for the leftmost bit while "000" and "101" could not.</p><p>By using path sensitization you can test the entire "path" (route between input and output) for stuck-at-faults, as any discrepincies will change the output of the circuit.</p><p><b><i>My Implementation</b></i><br /><br />For my path sensitization implementation I took in an input expression that represented the cicuit (a and b). From there, the circuit was evaluated for every possible input, and these input/output combinations were stored in a python dictionary. In order to detect faults each input vector was looked at individually, and compared to other vectors that were only different by one bit. If the output was changed between them, then I knew the path was sensitized for that specific bit and the vector was saved. Once every vector had been checked to find sensitized bits, I created a function that finds the minimum amount of vectors to check every available stuck-at-fault and prints them.</p><img id="postimg" src="http://tylerkrupicka.com/assets/dsd/vectors1.png" alt="minimized test vectors">
+  </div>
+</div>
+<div id="footer">
+<div id="footertext">&copy; Tyler Krupicka 2015</div></div>
+</body>
+</html><!--Generated Using Staticky, by Tyler Krupicka -->
