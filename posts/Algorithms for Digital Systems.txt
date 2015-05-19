@@ -37,11 +37,11 @@ Thumbnail:
   Path sensitization is the input to a circuit makes the output a function of the input. For example, if you have a single input circuit there are two sensitized test vectors: when the input and output are one and when the input and output are zero. Every input adds two more sensitized vectors, each when the output matches the sensitized input bit. An important concept to note is that the pairs of sensitized vectors have to be one bit apart; for example, "000" and "100" could both be sensitized vectors for the leftmost bit while "000" and "101" could not.
 </p>
 <p>
-  By using path sensitization you can test the entire "path" (route between input and output) for stuck-at-faults, as any discrepincies will change the output of the circuit.
+  By using path sensitization you can test the entire "path" (route between input and output) for stuck-at-faults, as any discrepancies will change the output of the circuit.
 </p>
 
 <p>
   <b><i>My Implementation</b></i><br /><br />
-  For my path sensitization implementation I took in an input expression that represented the cicuit (a and b). From there, the circuit was evaluated for every possible input, and these input/output combinations were stored in a python dictionary. In order to detect faults each input vector was looked at individually, and compared to other vectors that were only different by one bit. If the output was changed between them, then I knew the path was sensitized for that specific bit and the vector was saved. Once every vector had been checked to find sensitized bits, I created a function that finds the minimum amount of vectors to check every available stuck-at-fault and prints them.
+  For my path sensitization implementation I took in an input expression that represented the circuit (a and b). From there, the circuit was evaluated for every possible input, and these input/output combinations were stored in a python dictionary. In order to detect faults each input vector was looked at individually, and compared to other vectors that were only different by one bit. If the output was changed between them, then I knew the path was sensitized for that specific bit and the vector was saved. Once every vector had been checked to find sensitized bits, I created a function that finds the minimum amount of vectors to check every available stuck-at-fault and prints them.
 </p>
 <img id="postimg" src="http://tylerkrupicka.com/assets/dsd/vectors1.png" alt="minimized test vectors">
