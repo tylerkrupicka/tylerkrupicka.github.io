@@ -7,6 +7,8 @@ I recently competed in a team autonomous drone challenge for the "RIT Meets the 
 </p>
 <p><a href = "https://github.com/tylerkrupicka/ARChallenge">On Github</a></p>
 <!-- more -->
+<img id="postimg" src="http://tylerkrupicka.com/assets/drone/above.png" alt="flight">
+
 <h2>Amazing Resources</h2>
 <p>
   The AR Drone is a very closed source platform with limited capabilites, however, we found some useful libraries and tutorials that make flying the drone and using computer vision possible.
@@ -38,7 +40,7 @@ A repository for creating Haar Cascades.
 <b>6.</b> <a href="http://www.trevorsherrard.com/Haar_training.html">Trevor Sherrard's Haar Training Tutorial</a><br />
 Trevor has a really fantastic tutorial on how to create a Haar Cascade XML using OpenCV. He helped us out by making suggestions on picture resolution and parameters for creating the xml.
 </p>
-
+<img id="postimg" src="http://tylerkrupicka.com/assets/drone/lab.png" alt="flight">
 <h2>Using Node</h2>
 <p>
   I learned a lot of Node.js while creating the autonomous program for this event. The program uses ar-drone to create a drone client which can be used for flight controls and creating a png stream. The Node.js "setInterval" command was used to repeatedly refresh the latest png and run the four classifiers for each of the Jetson's family.
@@ -54,7 +56,7 @@ Trevor has a really fantastic tutorial on how to create a Haar Cascade XML using
 <p>
   The Node OpenCV wrapper provides some filtering parameters for the "detectObject" function which performs detection using our created Haar Cascade XML files. I found that the most useful was the "neighbors" parameter, which limits matching to points that were detected in multiple passes of the cascade. Increasing the neighbors requirement to 1 and 2 significantly reduced noise when classifying.
 </p>
-
+<img id="postimg" src="http://tylerkrupicka.com/assets/drone/elroy.png" alt="flight">
 <h2>Haar Training</h2>
  <p>
   In order to detect an image using OpenCV we had to create Haar Cascade files that were trained using images of the object we were trying to detect. For each of the Jetsons family members, we took approximately 40 images using a camera with different backgrounds and lighting conditions.</p>
