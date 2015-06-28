@@ -3,8 +3,9 @@ year: 2015
 title: TYLER<br />KRUPICKA
 subtitle: Computer Engineer | Programmer | Designer
 author: Tyler Krupicka
+color: <meta name="theme-color" content="#0ac5f4">
 num_thumb: 5
-about: Hello, my name is Tyler Krupicka.<br />I'm a programmer, machinist, and 3D printer enthusiast from Newberg, Oregon. I'm currently studying computer engineering at Rochester Institute of Technology in Rochester, New York. This site was built from scratch; allowing me to post links, projects, and general interests.
+about: Hello, my name is Tyler Krupicka.<br />I'm a software / embedded systems developer and 3D printer enthusiast from Newberg, Oregon. I'm currently studying computer engineering at Rochester Institute of Technology in Rochester, New York. This site was built from scratch; allowing me to post links, projects, and general interests.
 email: tyler.krupicka13@gmail.com
 github: http://www.github.com/tylerkrupicka
 twitter: http://twitter.com/tylerkrupicka
