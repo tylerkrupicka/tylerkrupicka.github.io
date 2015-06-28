@@ -3,7 +3,7 @@ Date: 2015-05-16
 Thumbnail:
 ---
 <p>
-    As part of my Digital Systems Design II course, I completed an optional assignment implementing algorithms for automating some digital design tasks. The first program algorithmically solves state transition tables when designing state machine circuits. The second generates a minimized set of test vectors for a ciruit using path sensitization.
+    As part of my Digital Systems Design II course, I completed an optional assignment implementing algorithms for automating some digital design tasks. The first program algorithmically solves state transition tables when designing state machine circuits. The second generates a minimized set of test vectors for a circuit using path sensitization.
 </p>
 <!-- more -->
 <h2>Simplifying State Machines</h2>
