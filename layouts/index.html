@@ -6,8 +6,18 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" type="image/png" href="http://tylerkrupicka.com/images/favicon.png">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript">
-    var _gaq = _gaq || [];
+$( document ).ready(function() {
+    $("#hero").hide().fadeIn(600);
+    $("#continue").hide().fadeIn(600);
+    $("#continue").click(function() {
+        $('html, body').animate({scrollTop: $("#page-wrap").offset().top}, 750);
+    });
+});
+</script>
+<script type="text/javascript">
+    var _gaq =s _gaq || [];
     _gaq.push(['_setAccount', '[[google_analytics_id]]']);
     _gaq.push(['_trackPageview']);
 
@@ -17,22 +27,15 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
  </script>
-
-
 </head>
 
 <body>
 <div id="back">
-<div id="hero">
-	<div id="title">[[title]]</div>
-  	<div id="subtitle">[[subtitle]]</div>
-    <a href="[[github]]"><img src="images/icons/github_round.png" alt="github"  id="heroicon"/></a>
-		<a href="[[thingiverse]]"><img src="images/icons/thingiverse_round.png" alt="thingiverse" id="heroicon"/></a>
-        <a href="mailto:[[email]]"><img src="images/icons/email_round.png" alt="email" id="heroicon"/></a>
-        <a href="[[resume]]"><img src="images/icons/resume_round.png" alt="resume" id="heroicon"/></a>
-        <a href="[[linkedin]]"><img src="images/icons/linkedin_round.png" alt="linkedin" id="heroicon"/></a>
- 		<a href="[[twitter]]"><img src="images/icons/twitter_round.png"alt="twitter" id="heroicon"/></a>
-</div></div>
+  <video autoplay loop poster="./assets/hero/still.png" id="bgvid">
+    <source src="./assets/hero/hero.webm" type="video/webm">
+</video>
+[[hero]]
+</div>
 
 <div id="page-wrap">
   <div id="spacer"></div>
