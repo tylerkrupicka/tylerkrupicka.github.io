@@ -11,6 +11,8 @@
 $( document ).ready(function() {
     $("#hero").hide().fadeIn(600);
     $("#continue").hide().fadeIn(600);
+
+    //Animate Scroll
     $("#continue").click(function() {
         $('html, body').animate({scrollTop: $("#page-wrap").offset().top}, 750);
     });
@@ -38,16 +40,12 @@ $( document ).ready(function() {
 </div>
 
 <div id="page-wrap">
-  <div id="spacer"></div>
-  <div id="about">
-  <h2>About Me</h2>
-  <p>[[about]]</p>
-  </div>
+  [[aboutMe]]
 
-  <div id="content">
+  <div id="contentWrapper"><div id="content">
     [[post_thumb]]
     <div id="allposts"><a href="allPosts.html">All Posts</a></div>
-  </div>
+</div></div>
 </div>
 [[footer]]
 
