@@ -8,52 +8,95 @@
 }
 
 html{
-	background-color: #0ac5f4;
+	background-color: #fff;
+}
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../assets/hero/still.png) no-repeat;
+    background-size: cover;
 }
 
 #back{
 	min-width:100%;
 	max-width:100%;
-	min-height:80vh;
+	min-height:70vh;
 }
 
 #hero{
+	background-color:rgba(255,255,255,.95);
 	text-align:left;
-	max-width:700px;
-	min-width:400px;
+	width:460px;
 	margin-left:auto;
 	margin-right:auto;
-	padding-top:10vh;
+  margin-top:30vh;
 	font-family: 'Lato', sans-serif;
+	padding: 20px;
+	border-radius: 1%;
+}
+
+#continue{
+	background-color:rgba(255,255,255,0);
+	border: 2px solid white;
+	text-align:center;
+	width:100px;
+	margin-left:auto;
+	margin-right:auto;
+  	margin-top:150px;
+	margin-bottom:50px;
+	font-family: 'Lato', sans-serif;
+	padding: 15px;
+	border-radius: 5%;
+	font-size:18px;
+	font-weight:300;
+	color:#FFF;
+}
+#continue:hover{
+	cursor: pointer;
+}
+#continue:active{
+	background-color:rgba(255,255,255,.5);
 }
 
 #title{
-	font-size:140px;
-	font-weight:100;
+	font-size:50px;
+	font-weight:300;
 	text-align:left;
-	color:rgba(255,255,255,1.00);
+	color:#313f47;
 }
 
 #subtitle{
-	font-size:34px;
+	max-width:460px;
+	min-width:460px;
+	font-size:24px;
 	font-weight:300;
 	text-align:left;
-	color:rgba(255,255,255,1.00);
+	color:#313f47;
+}
+
+#logoCircle{
+	display:inline-block;
+	background-color: #313f47;
+	margin-top: 10px;
+	margin-right: 10px;
+	border-radius: 7%;
 }
 
 #heroicon{
 	height:50px;
 	width:50px;
-	margin-left:auto;
-	margin-right:auto;
-	padding-top:25px;
-	padding-left:0px;
-	padding-right:20px;
-	display:inline-block;
-	
 }
 
-#heroicon:hover{
+#logoCircle:hover{
     -webkit-transform: scale(1.1,1.1);
     -moz-transform:scale(1.1,1.1);
     opacity: 1;
@@ -70,13 +113,13 @@ html {
 	max-height:250;
 	margin-left:auto;
 	margin-right:auto;
-	padding-top:100px;
+	margin-top:100px;
 	background-color:white;
 	-moz-box-shadow: 0 0 20px black;
 	-webkit-box-shadow: 0 0 20px black;
 	box-shadow: 0 0 20px black;
 	opacity:.85;
-	
+
 }
 
 #page-wrap {
@@ -106,22 +149,41 @@ html {
 }
 
 #about{
-	max-width:720px;
-	background:rgba(255,255,255,1.00);
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:20px;
-	padding-bottom:20px;
+	padding-top: 20px;
+	width:100%;
+	background:rgba(243,243,243,1);
 	min-width:480px;
 }
-	
+
+#aboutText{
+	max-width:720px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom: 20px;
+}
+
+#aboutImage{
+	width:100px;
+	height: 100px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:7%;
+	background: url("../images/me.jpg") center center;
+	background-size: 100px 100px;
+}
+
+#contentWrapper{
+	width:100%;
+	background-color: #fff;
+}
+
 #content{
 	max-width:720px;
 	background:rgba(255,255,255,1.00);
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:20px;
-	padding-bottom:20px;
+	padding-bottom:10px;
 	min-width:480px;
 }
 
@@ -175,6 +237,7 @@ html {
 
 #allposts a{
 	color:#000000;
+	font-weight: 500;
 }
 
 #footer{
@@ -220,7 +283,7 @@ html {
 
 p {
 	text-align:left;
-	font-size:21px;
+	font-size:18px;
 	padding-left:30px;
 	padding-right:30px;
 	padding-top:30px;
@@ -235,7 +298,7 @@ h2{
 	padding-right:30px;
 	padding-top:30px;
 	font-size: 36px;
-	font-weight: 300;
+	font-weight: 500;
 	text-decoration:none;
 	color:#000000;
 }
@@ -251,7 +314,7 @@ h2 a{
 }
 a:link {text-decoration:none;}
 a:visited {text-decoration:none;}
-a:hover {text-decoration:underline;} 
+a:hover {text-decoration:underline;}
 
 #postimg{
 	padding-top:20px;
@@ -259,10 +322,45 @@ a:hover {text-decoration:underline;}
 	width:100%;
 }
 
-@media only screen and (max-device-width: 480px) {
-
+@media only screen and (max-device-width:800px) {
+		html {
+	         background: #fff url("../assets/hero/still.png")  no-repeat center center fixed;
+			background-size: cover;
+	    }
 		#hero{
-			padding-top:15vh;
+			width: 500px;
+		}
+		#title{
+			font-size: 80px;
+		}
+		#subtitle{
+			font-size:30px;
+		}
+		#continue{
+			background-color: #fff;
+			font-weight: 500;
+			font-size: 25px;
+			margin-top: 400px;
+			width:200px;
+			color:#313f47;
+		}
+		#continue:active{
+			background-color:rgba(255,255,255,.3);
+		}
+		#date{
+			font-size: 24px;
+		}
+	    #bgvid {
+	        display: none;
+	    }
+		#aboutImage{
+			width: 250px;
+			height: 250px;
+			background-size: 250px 250px;
+		}
+		#aboutText{
+			max-width:none;
+			padding-bottom: 30px;
 		}
 		#content {
 			width: 100%;
@@ -276,24 +374,16 @@ a:hover {text-decoration:underline;}
 			width: 100%;
 			max-width:none;
 		}
-		#back{
-		}
 		#readon{
 			font-size:30px;
 		}
-		#heroicon{
-			height:90px;
-			width:90px;
-		}
 		#footer{
 			padding-top:40px;
+			margin-top: -5px;
 			padding-bottom:40px;
 			background:rgba(255,255,255,1);
 		}
 		#footericon{
 			height:60px;
 			width:60px;
-		}
-		#title{
-			font-size:160px;
 		}

@@ -1,13 +1,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="theme-color" content="#0ac5f4">
+<meta name="theme-color" content="#fff">
 <title>Tyler Krupicka</title>
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" type="image/png" href="http://tylerkrupicka.com/images/favicon.png">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript">
-    var _gaq = _gaq || [];
+$( document ).ready(function() {
+    $("#hero").hide().fadeIn(600);
+    $("#continue").hide().fadeIn(600);
+
+    //Animate Scroll
+    $("#continue").click(function() {
+        $('html, body').animate({scrollTop: $("#page-wrap").offset().top}, 750);
+    });
+});
+</script>
+<script type="text/javascript">
+    var _gaq =s _gaq || [];
     _gaq.push(['_setAccount', 'UA-51635607-1']);
     _gaq.push(['_trackPageview']);
 
@@ -17,31 +29,35 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
  </script>
-
-
 </head>
 
 <body>
 <div id="back">
+  <video autoplay loop poster="./assets/hero/still.png" id="bgvid">
+    <source src="./assets/hero/hero.webm" type="video/webm">
+</video>
 <div id="hero">
 	<div id="title">TYLER<br />KRUPICKA</div>
-  	<div id="subtitle">Computer Engineer | Programmer | Designer</div>
-    <a href="http://www.github.com/tylerkrupicka"><img src="images/icons/github_round.png" alt="github"  id="heroicon"/></a>
-		<a href="http://thingiverse.com/tylerkrupicka"><img src="images/icons/thingiverse_round.png" alt="thingiverse" id="heroicon"/></a>
-        <a href="mailto:tyler.krupicka13@gmail.com"><img src="images/icons/email_round.png" alt="email" id="heroicon"/></a>
-        <a href="http://tylerkrupicka.com/assets/resume.pdf"><img src="images/icons/resume_round.png" alt="resume" id="heroicon"/></a>
-        <a href="http://www.linkedin.com/in/tylerkrupicka"><img src="images/icons/linkedin_round.png" alt="linkedin" id="heroicon"/></a>
- 		<a href="http://twitter.com/tylerkrupicka"><img src="images/icons/twitter_round.png"alt="twitter" id="heroicon"/></a>
-</div></div>
+  	<div id="subtitle">Computer Engineer / Designer</div>
+        <div id="logoCircle"><a href="http://www.github.com/tylerkrupicka"><img src="images/icons/github_logo.png" alt="github"  id="heroicon"/></a></div>
+        <div id="logoCircle"><a href="http://thingiverse.com/tylerkrupicka"><img src="images/icons/thingiverse_logo.png" alt="thingiverse" id="heroicon"/></a></div>
+        <div id="logoCircle"><a href="mailto:tyler@tylerkrupicka.com"><img src="images/icons/email_logo.png" alt="email" id="heroicon"/></a></div>
+        <div id="logoCircle"><a href="http://tylerkrupicka.com/assets/resume.pdf"><img src="images/icons/resume_logo.png" alt="resume" id="heroicon"/></a></div>
+        <div id="logoCircle"><a href="http://www.linkedin.com/in/tylerkrupicka"><img src="images/icons/linkedin_logo.png" alt="linkedin" id="heroicon"/></a></div>
+ 		    <div id="logoCircle"><a href="http://twitter.com/tylerkrupicka"><img src="images/icons/twitter_logo.png"alt="twitter" id="heroicon"/></a></div>
+</div>
+<div id="continue">Continue</div>
+
+</div>
 
 <div id="page-wrap">
-  <div id="spacer"></div>
   <div id="about">
-  <h2>About Me</h2>
-  <p>Hello, my name is Tyler Krupicka.<br />I'm a software / embedded systems developer and 3D printer enthusiast from Newberg, Oregon. I'm currently studying computer engineering at Rochester Institute of Technology in Rochester, New York. This site was built from scratch; allowing me to post links, projects, and general interests.</p>
-  </div>
+<div id="aboutImage"></div>
+    <div id="aboutText"><p >Hello, I'm Tyler. I'm a developer, engineer, and 3D printer enthusiast from Newberg, Oregon currently studying computer engineering at RIT. I use this site to post updates on some of the things I'm working on.</p></div>
+</div>
 
-  <div id="content">
+
+  <div id="contentWrapper"><div id="content">
     <h2><a href="blog/Algorithms-for-Digital-Systems.html">Algorithms for Digital Systems</a></h2>
     <div id="date">written 2015-05-16</div>
     <p>As part of my Digital Systems Design II course, I completed an optional assignment implementing algorithms for automating some digital design tasks. The first program algorithmically solves state transition tables when designing state machine circuits. The second generates a minimized set of test vectors for a circuit using path sensitization.</p> <div id="readon"><a href="blog/Algorithms-for-Digital-Systems.html">Read on &rarr;</a></div><br /><br /><h2><a href="blog/Parrot-AR-Drone-2-Challenge.html">Parrot AR Drone 2 Challenge</a></h2>
@@ -54,7 +70,7 @@
     <div id="date">written 2015-01-01</div>
     <p>After the @DefiantLee_ twitter bot had its API key taken away, I decided to create a Django web app to utilize my machine learning classifier. The site is hosted on digitalocean, and uses the twitter api to display and store recent misuses. <br /><br /><a href="http://defiantly.me">defiantly.me</a></p> <div id="readon"><a href="blog/defiantly.me.html">Read on &rarr;</a></div><br /><br />
     <div id="allposts"><a href="allPosts.html">All Posts</a></div>
-  </div>
+</div></div>
 </div>
 <div id="footer">
 <div id="footertext">&copy; Tyler Krupicka 2015</div></div>
