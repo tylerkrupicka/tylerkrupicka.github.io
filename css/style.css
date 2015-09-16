@@ -140,7 +140,8 @@ video#bgVideo {
 #about{
     width:100%;
 	background:#F0F0F0;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #aboutText{
@@ -216,10 +217,11 @@ video#bgVideo {
 #footer{
 	background:rgba(255,255,255,1.00);
 	width: 100%;
-    padding:20px;
 	height: 40px;
 	font-size:20px;
 	text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #footertext{
