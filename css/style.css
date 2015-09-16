@@ -72,7 +72,7 @@ video#bgVideo {
 	width:380px;
 	margin-left:auto;
 	margin-right:auto;
-	padding: 20px;
+	padding:20px;
 	border-radius: 1%;
     font-weight:300;
     color:#313f47;
@@ -234,19 +234,28 @@ video#bgVideo {
 	width:100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   html{
       background-color: #fff;
   }
   video {
     display:none;
   }
+  #hero{
+     width: 100%;
+  }
+  #heroSubtitle{
+      font-size: 20px;
+  }
+  #heroIcon{
+      height: 35px;
+      width:35px;
+  }
+ #content{
+     min-width:350px;
+ }
  #landing{
     background-image: url("../assets/hero/still.png");
     background-size: 100% 100vh;
-  }
-  #continue{
-      border: 2px solid #313f47;
-      color:#313f47;
   }
 }
