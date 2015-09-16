@@ -235,8 +235,8 @@ video#bgVideo {
 }
 
 @media only screen and (max-width: 768px) {
-  video#bgVideo {
-    /*display:none;*/
+  video {
+    display:none;
   }
  #landing{
     background-image: url("../assets/hero/still.png");
