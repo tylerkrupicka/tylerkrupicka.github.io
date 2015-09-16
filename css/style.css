@@ -121,6 +121,9 @@ video#bgVideo {
 	font-size:18px;
 	font-weight:300;
 	color:#FFF;
+	-webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
 }
 #continue:hover{
 	cursor: pointer;
