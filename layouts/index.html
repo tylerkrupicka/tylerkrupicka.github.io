@@ -1,53 +1,50 @@
 <html>
 <head>
-<meta charset="UTF-8">
-[[color]]
-<title>Tyler Krupicka</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link rel="icon" type="image/png" href="http://tylerkrupicka.com/images/favicon.png">
+    <meta charset="UTF-8">
+    [[color]]
+    <title>Tyler Krupicka</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="http://tylerkrupicka.com/images/favicon.png">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script type="text/javascript">
-$( document ).ready(function() {
-    $("#hero").hide().fadeIn(600);
-    $("#continue").hide().fadeIn(600);
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">
+    $( document ).ready(function() {
+        $("#hero").hide().fadeIn(600);
+        $("#continue").hide().fadeIn(600);
 
-    //Animate Scroll
-    $("#continue").click(function() {
-        $('html, body').animate({scrollTop: $("#page-wrap").offset().top}, 750);
+        //Animate Scroll
+        $("#continue").click(function() {
+            $('html, body').animate({scrollTop: $("#page-wrap").offset().top}, 750);
+        });
     });
-});
-</script>
-<script type="text/javascript">
+    </script>
+    <script type="text/javascript">
     var _gaq =s _gaq || [];
     _gaq.push(['_setAccount', '[[google_analytics_id]]']);
     _gaq.push(['_trackPageview']);
 
     (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
- </script>
+    </script>
 </head>
 
 <body>
-<div id="back">
-  <video autoplay loop poster="./assets/hero/still.png" id="bgvid">
-    <source src="./assets/hero/hero.webm" type="video/webm">
-</video>
-[[hero]]
-</div>
-
-<div id="page-wrap">
-  [[aboutMe]]
-
-  <div id="contentWrapper"><div id="content">
-    [[post_thumb]]
-    <div id="allposts"><a href="allPosts.html">All Posts</a></div>
-</div></div>
-</div>
-[[footer]]
-
-</body>
-</html>
+    <div id="landing">
+        <video autoplay loop poster="./assets/hero/still.png" id="bgVideo">
+            <source src="./assets/hero/hero.webm" type="video/webm">
+        </video>
+            [[hero]]
+    </div>
+        <div id="page-wrap">
+            [[aboutMe]]
+            <div id="content">
+                [[post_thumb]]
+                <div id="allposts"><a href="allPosts.html">All Posts</a></div>
+            </div>
+        [[footer]]    
+        </div>
+    </body>
+    </html>
