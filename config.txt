@@ -5,7 +5,7 @@ subtitle: Computer Engineer / Designer
 author: Tyler Krupicka
 color: <meta name="theme-color" content="#fff">
 num_thumb: 5
-about: Hello, I'm Tyler. I'm a developer, engineer, and 3D printer enthusiast from Newberg, Oregon currently studying computer engineering at RIT. I use this site to post updates on some of the things I'm working on.
+about: Hello, I'm Tyler. I'm a developer, engineer, and 3D printer enthusiast from Newberg, Oregon currently studying computer engineering at RIT. This site was built from scratch; I use it to post updates on some of the things I'm working on.
 email: tyler@tylerkrupicka.com
 github: http://www.github.com/tylerkrupicka
 twitter: http://twitter.com/tylerkrupicka
