@@ -243,8 +243,13 @@ video#bgVideo {
   }
   #hero{
      width: 100%;
+     padding: 0px;
+  }
+  #heroTitle{
+      margin-left: 10px;
   }
   #heroSubtitle{
+       margin-left: 10px;
       font-size: 20px;
   }
   #heroIcon{
