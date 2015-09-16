@@ -244,17 +244,17 @@ video#bgVideo {
   #hero{
      width: 100%;
      padding: 0px;
-  }
-  #heroTitle{
-      margin-left: 10px;
+     background-color: rgba(255, 255, 255, 0.8);
   }
   #heroSubtitle{
-       margin-left: 10px;
       font-size: 20px;
   }
   #heroIcon{
       height: 35px;
       width:35px;
+  }
+  #heroWrapper{
+      margin-left: 30px;
   }
  #content{
      min-width:350px;
