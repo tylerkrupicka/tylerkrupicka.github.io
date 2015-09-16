@@ -235,11 +235,18 @@ video#bgVideo {
 }
 
 @media only screen and (max-width: 768px) {
+  html{
+      background-color: #fff;
+  }
   video {
     display:none;
   }
  #landing{
     background-image: url("../assets/hero/still.png");
     background-size: 100% 100vh;
+  }
+  #continue{
+      border: 2px solid #313f47;
+      color:#313f47;
   }
 }
