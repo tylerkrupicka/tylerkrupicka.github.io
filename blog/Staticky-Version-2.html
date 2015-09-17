@@ -23,14 +23,16 @@
 </head>
 
 <body>
-
-<div id="page-wrap-all">
-  <div id="content">
-   <h2>Staticky Version 2</h2>
-    <div id="date">written 2014-11-26</div>
+    <div id="postHeader">
+        <div id="postHeaderText">
+            <a href="http://tylerkrupicka.com"><img src="../images/icons/TK.png" alt="home"  id="postIcon"/></a>
+            <h2><div style="color:#fff;font-weight:400;font-size:45;padding-top: 50px;">Staticky Version 2</div></h2>
+            <div id="postDate">written 2014-11-26</div>
+        </div>
+    </div>
+ <div id="content">
     <p>Today I made some major updates to the staticky site generator that my site runs on, to allow for a wide variety of sites to be created with it. Previously, the generator was tailored to providing only the functionality that this site needed, without allowing much creativity in site layout.<p><a href="https://github.com/tylerkrupicka/staticky">On Github</a></p></p><!-- more --><img id="postimg" src="http://tylerkrupicka.com/assets/staticky/loadposts.jpg" alt="load posts"><h2>Setup</h2><p>The first new feature I added is a setup routine, which only runs in a near empty directory. This function automatically sets up base folders and files in the project, so that everything is in the correct place and named correctly. Now creating a functioning (blank) site takes seconds, which will greatly simplify creating other sites populated by staticky.</p><h2>Elements</h2><p>A major flaw of Staticky 1 was that it only replaced variables, not full site elements. I wanted the ability to insert full elements (such as nav bars or footers) in to layouts, so I created an elements directory that allows that.</p><h2>Layout Overhaul</h2><p>Previously there was a set number of layouts allowed by the generator, which literally only allowed for sites mirroring my sites functionality. This is no longer the case. Any layout created will be treated as its own page, and will work and propigate with any name.</p><h2>Picture Thumbnails</h2><p>While my site uses text-based post thumbnails, I realized that many sites would probably include a picture element. I made a minor tweak so that now all posts have a picture thumbnail field.</p><h2>Create a Content-Based Site in Seconds</h2><p>All of these updates bring the script a lot closer to my goal of creating a multi-purpose site generator that is extremely simple to set up and use. I hope to use the generator to quickly create and propigate sites for other projects.</p><p>Check out the Github page to try it out.</p>
-  </div>
-</div>
+ </div>
 <div id="footer">
 <div id="footertext">&copy; Tyler Krupicka 2015</div></div>
 </body>

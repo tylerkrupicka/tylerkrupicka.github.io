@@ -236,6 +236,30 @@ video#bgVideo {
 	padding-bottom:20px;
 	width:100%;
 }
+#postHeader{
+	background-color:#313f47;
+	height: 300px;
+	color: #fff;
+}
+#postIcon{
+	width: 50px;
+	height: 50px;
+	background-color: #313f47;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+#postHeaderText{
+	max-width:720px;
+	margin-left:auto;
+	margin-right:auto;
+	min-width:480px;
+	font-weight: 300;
+}
+#postDate{
+	padding-left:30px;
+	padding-right:30px;
+	font-size: 18px;
+}
 
 @media only screen and (max-width: 480px) {
   html{
@@ -261,6 +285,9 @@ video#bgVideo {
   }
  #content{
      min-width:350px;
+ }
+ #postHeaderText{
+	 min-width:350px;
  }
  #landing{
     background-image: url("../assets/hero/still.png");
