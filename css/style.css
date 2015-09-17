@@ -238,7 +238,7 @@ video#bgVideo {
 }
 #postHeader{
 	background-color:#313f47;
-	height: 300px;
+	height: auto;
 	color: #fff;
 }
 #postIcon{
@@ -259,6 +259,7 @@ video#bgVideo {
 	padding-left:30px;
 	padding-right:30px;
 	font-size: 18px;
+	padding-bottom: 40px;
 }
 
 @media only screen and (max-width: 480px) {
