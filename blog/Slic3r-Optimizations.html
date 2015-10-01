@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#313f47">
+<title>Slic3r Optimizations</title>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href="http://tylerkrupicka.com/images/favicon.png">
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51635607-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+ </script>
+
+</head>
+
+<body>
+    <div id="postHeader">
+        <div id="postHeaderText">
+            <a href="http://tylerkrupicka.com"><img src="../images/icons/TK.png" alt="home"  id="postIcon"/></a>
+            <h2><div style="color:#fff;font-weight:400;font-size:45;padding-top: 50px;">Slic3r Optimizations</div></h2>
+            <div id="postDate">written 2015-08-29</div>
+        </div>
+    </div>
+ <div id="content">
+    <p>In the recent weeks I've been focusing on improving and optimizing the Kossel in order to produce much higher quality prints. I've included a copy of my Slic3r configuration along with some insights in to the settings that have made the most difference. </p><!-- more --><img id="postimg" src="../assets/kossel/slic3r.jpg" alt="train track pieces"><h2>Slic3r</h2><p>I've decided to use Slic3r as my slicer for the Kossel because it offers fine control over the process (in Advanced Mode), exportable configurations, and most important I'm familiar with it. It's been a while since I used it in high school, but it doesn't seem to have changed much.</p><h2>Temperature</h2><p>I've found the best temperatures for my PLA to be 215C for the first layer and 205 for all of the remaining layers. I really don't have a way of testing the accuracy of my temperature sensor, so I have to blindly assume that those are the actual temperatures. At 205 degrees there is a slight problem of leaking as the print head moves between locations, however lowering the temperature runs the risk of causing the extruder motor to slip. I've had some issues with this in the past. There is an experimental feature within Slic3r that allows you to have the extruder retract plastic during moves (reducing drip), however my tests have shown that it often does not resume extruding as fast as it needs to.</p><h2>Support</h2><p>Support and rafting is the one area that I know I will need to keep refining. Currently the best configuration I've found is two laps of skirt to remove nozzle buildup, four laps of brim to assist adhesion, and three layers of rafting with three interference layers.</p><p>With regards to the raft, the three layers seems to be the easiest to remove of what I've tried, but I really need to test more with the spacing to improve this. The interference layers cause the printer to leave a gap between the raft and the first layer, making the raft easier to remove and overcoming blemishes. The cost of this is that the first layer is often not perfectly smooth.</p><h2>Infill and Texture</h2><p>Out of all the Slic3r options I prefer the honeycomb infill at 30% fill density. Honeycomb is extremely sturdy as well as really fun to watch print, which are equally important. However, the concentric fill pattern makes for a really smooth finish on the top layers.</p><h2>Download</h2><p>Here's a download link to my Slic3r configuration, feel free to use it and tweak it. I'd love to hear any improvements!<br /><br /><a href="../assets/kossel/kossel_slic3r.ini">Download</a></p>
+ </div>
+<div id="footer">
+<div id="footertext">&copy; Tyler Krupicka 2015</div></div>
+</body>
+</html>
+<!--Generated Using Staticky, by Tyler Krupicka -->
