@@ -3,7 +3,7 @@ Date: 2015-10-03
 Thumbnail:
 ---
 <p>
-Jimmy Ly and I have been hard at work creating "ValleyGirl", a javascript browser extension that clicks every Facebook like button. The extension quietly likes every button on external sites, and discreetly likes every post and comment on Facebook as you scroll. This can generate hundreds of likes in a very short period of time, without the user seeing any indication. <i>It's the perfect crime.</i><br><br>
+Jimmy Ly and I have been hard at work creating "ValleyGirl", a Javascript browser extension that clicks every Facebook like button. The extension discreetly likes every button on external sites, as well as every post and comment on Facebook. This can generate hundreds of likes in a very short period of time, without the user seeing any indication. <i>It's the perfect crime.</i><br><br>
 <a href="https://chrome.google.com/webstore/detail/valley-girl-like-everythi/aaobhafeeoijpgnohafhbpjldeoldpin?hl=en">Chrome Webstore</a>
 </p>
 <!-- more -->
