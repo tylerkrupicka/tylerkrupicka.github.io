@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#313f47">
+<title>Getting Started with Alexa Skills Kit</title>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href="http://tylerkrupicka.com/images/favicon.png">
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51635607-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+ </script>
+
+</head>
+
+<body>
+    <div id="postHeader">
+        <div id="postHeaderText">
+            <a href="http://tylerkrupicka.com"><img src="../images/icons/TK.png" alt="home"  id="postIcon"/></a>
+            <h2><div style="color:#fff;font-weight:400;font-size:45;padding-top: 50px;">Getting Started with Alexa Skills Kit</div></h2>
+            <div id="postDate">written 2015-09-12</div>
+        </div>
+    </div>
+ <div id="content">
+    <p>The Alexa Skills Kit is a platform that allows developers to create content for Amazon Echo, specifically the Amazon Alexa Virtual Assistant. The platform is in its early stages (and quite limitied), but it still allows for some neat projects.</p><!-- more --><h2>Brief Overview</h2><p>Getting a skill to run on your Echo is fairly straightforward, and I highly recommend using Amazon's provided resources to simplify the process. In order to create a skill, you first need to go to the Amazon Developers Dashboard and set one up, theres a bit of information you'll need to determine what it does. The easiest way to create responses is using AWS Lambda, which is configured to handle Alexa requests. The Lambda function will also allow you to send requests to other services you may want to integrate with.</p><h2>Skill Setup</h2><p>Creating a skill requires two key pieces of information: <i>intents</i> and <i>utterances</i>. Intents tell your program what function the user is trying to perform, such as: turn on the lights, read my email, or tell a joke. When your AWS Lambda function runs, the request will indicate the detected intent. Utterances are the phrases and information you need for each intent.</p><p>An example of all of this could be a skill that tells you the weather at a given location. In this case you'd need to recognize that the user is looking for the weather, determine what location they say, and then give a response. This would roughly look like:<br><br><b>Intent: </b>"WeatherIntent" - Define an intent for the user wanting the weather.<br><b>Slots: </b>"Location" - We need to pull out the location the user says.<br><b>Utterance 1: </b>"WeatherIntent What is the weather in {oregon|Location}" - This will indicate that if the user says this phrase our program will recieve a weather intent and a location of oregon.</p><p>Amazon has unfortunately designed utterances to be too specific, often requiring you to type out every way something could be said. They have recently put out a way to create lists (of states for example) to help generate more without seeming repetitive, but this schema does create some restrictions.</p><p>Besides using the list tool, there is another way to simplify the process. By abusing the utterance a little you can force the Alexa Skill Engine to give your program the full phrase the user said, allowing you to programatically parse the input. It would be much simpler to just look for the word weather and a location than define everything before. In order to do this, just define some dummy utterances with multiple words set to a variable that will contain the full string. For example:<br><br><b>Utterance 1: </b>"WeatherIntent {word|UserPhrase}"<br><b>Utterance 2: </b>"WeatherIntent {a phrase|UserPhrase}"<br><b>Utterance 3: </b>"WeatherIntent {some more words|UserPhrase}"<br><br>Having these variable length slot-matching commands in it just ends up making the engine give you the full string in the UserPhrase variable.</p><h2>Creating a Lambda</h2><p>AWS Lambda allows for creating a function in Java, Node.js, and (recently) Python 2.7. I recommend creating the skill in Node, as it is easy enough to make requests to outside services and Amazon has a library for creating responses that makes it really easy. A good tip: don't use the library that Amazon provides in the Alexa tutorial, use the library that their engineers created for the skills they share. It's much simpler, and allows you to use functions like tell() and tellWithCard() for responses. No JSON formatting required!</p><h2>Alexa Speak</h2><p>The text that Alexa returns is not very useful for parsing. Individual letters, for example W, are always followed by a period and numbers are always written in word form. Additionally, the speech recognition is unreliable (especially compared to Google). I highly recommend creating an endpoint for translating some of this back in to English, as well as converting frequently mis-heard words to your project's domain-specific vocabulary. This really only matters when you don't use the pre-defined utterances.</p>
+ </div>
+<div id="footer">
+<div id="footertext">&copy; Tyler Krupicka 2015</div></div>
+</body>
+</html>
+<!--Generated Using Staticky, by Tyler Krupicka -->
