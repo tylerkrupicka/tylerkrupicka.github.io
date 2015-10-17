@@ -3,7 +3,7 @@ Date: 2015-09-22
 Thumbnail:
 ---
 <p>
-I've always wanted a way to easily create moving timelapses without a super expensive fixed axis rig. Over the last month I've finally created a (fairly) reliable system using a Brio train set and Thomas the Tank Engine toy train from the 90's. Everyone has a box of these somewhere in the attic.<br><br>
+I've always wanted a way to easily create moving timelapses without a super expensive fixed axis slider. Over the last month I've finally created a (fairly) reliable system using a Brio train set and Thomas the Tank Engine toy train from the 90's. Everyone has a box of these somewhere in the attic.<br><br>
 
 <a href="http://www.thingiverse.com/thing:993541">Thingiverse</a>
 </p>
