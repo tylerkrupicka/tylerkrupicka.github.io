@@ -1,14 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 * {
 	margin: 0;
 	padding: 0;
 }
 
 html {
-	font-family:'Lato', sans-serif;
+	font-family:'Roboto', sans-serif;
 }
 
 p {
@@ -51,25 +51,13 @@ a:hover {text-decoration:underline;}
     height:100vh;
 }
 
-video#bgVideo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-}
-
 #heroSpacer{
-    height:25vh;
+    height:30vh;
 }
 
 #hero{
-	background-color:rgba(255,255,255,.95);
-	text-align:left;
-	width:380px;
+	text-align:center;
+	width:100%;
 	margin-left:auto;
 	margin-right:auto;
 	padding:20px;
@@ -79,11 +67,20 @@ video#bgVideo {
 }
 
 #heroTitle{
-	font-size:50px;
+	font-size:6em;
+	font-weight: 900;
+	color: #313f47;
+	text-shadow:
+      0px 0px 1px #039BE5,
+      1px 1px 2px #039BE5,
+      2px 2px 3px #039BE5,
+      3px 3px 4px #039BE5,
+	  4px 4px 4px #039BE5,
+	  5px 5px 4px #039BE5,
 }
 
 #heroSubtitle{
-	font-size:24px;
+	font-size:2em;
 }
 
 #heroIcon{
@@ -109,8 +106,7 @@ video#bgVideo {
 }
 
 #continue{
-	background-color:rgba(255,255,255,0);
-	border: 2px solid white;
+	background-color:#313f47;
 	text-align:center;
 	width:100px;
 	margin-left:auto;
@@ -120,7 +116,7 @@ video#bgVideo {
 	border-radius: 5%;
 	font-size:18px;
 	font-weight:300;
-	color:#FFF;
+	color:white;
 	-webkit-user-select: none; /* Chrome/Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+ */
@@ -135,9 +131,6 @@ video#bgVideo {
 #page-wrap {
 	width:100%;
 	background:#fff;
-	-moz-box-shadow: 0 0 20px black;
-	-webkit-box-shadow: 0 0 20px black;
-	box-shadow: 0 0 20px black;
 }
 
 #about{
@@ -266,9 +259,6 @@ video#bgVideo {
   html{
       background-color: #fff;
   }
-  video {
-    display:none;
-  }
   #hero{
      width: 100%;
      padding: 0px;
@@ -291,7 +281,6 @@ video#bgVideo {
 	 min-width:350px;
  }
  #landing{
-    background-image: url("../assets/hero/still.png");
     background-size: 100% 100vh;
   }
 }

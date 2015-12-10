@@ -1,7 +1,7 @@
 url: http://tylerkrupicka.com
 year: 2015
-title: TYLER<br />KRUPICKA
-subtitle: Computer Engineer / Developer
+title: TYLER KRUPICKA
+subtitle: Computer Engineer / Software Developer
 author: Tyler Krupicka
 color: <meta name="theme-color" content="#313f47">
 num_thumb: 5
