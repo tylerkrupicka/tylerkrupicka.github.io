@@ -259,6 +259,9 @@ a:hover {text-decoration:underline;}
   html{
       background-color: #fff;
   }
+  h2{
+	  font-size: 1.6em;
+  }
   #hero{
      width: 100%;
      padding: 0px;
@@ -271,6 +274,11 @@ a:hover {text-decoration:underline;}
         1px 1px 2px #039BE5,
         2px 2px 3px #039BE5,
         3px 3px 4px #039BE5
+  }
+  #continue{
+	  font-size: 1em;
+	  width: 80px;
+	  padding: 12px;
   }
   #heroSubtitle{
       font-size:1em;

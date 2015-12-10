@@ -3,14 +3,17 @@ Date: 2015-10-03
 Thumbnail:
 ---
 <p>
-Jimmy Ly and I have been hard at work creating "ValleyGirl", a Javascript browser extension that clicks every Facebook like button across the web. <i>It's the perfect crime.</i><br><br>
+Jimmy and I have been hard at work creating "ValleyGirl", a Javascript browser extension that clicks every Facebook like button across the web. We're sorry.<br><br>
 <a href="https://chrome.google.com/webstore/detail/valley-girl-like-everythi/aaobhafeeoijpgnohafhbpjldeoldpin?hl=en">Chrome Webstore</a>
 </p>
 <!-- more -->
-<img id="postimg" src="../assets/valleygirl/cover.png" height="400"alt="logo">
+<img id="postimg" src="../assets/valleygirl/cover.png" alt="logo">
 <h2>The Idea</h2>
 <p>
-Jimmy and I came up with the idea for ValleyGirl while spitballing pranks using Javascript. The idea is pretty simple, likes are the only form of social interaction that is hard for you to notice and Facebook is the only network that broadcasts them.
+I don't exactly remember the circumstances that led to us coming up with the idea for ValleyGirl, but it definitely wasn't a legitimate use.
+</p>
+<p>
+In general good pranks involve embarrassing someone in front of their friends, which makes Facebook an obvious platform choice. Liking things is usually pretty subtle, but I think Facebook is something people like to keep highly curated regardless. It becomes more and more apparent that something is up when your friend's feeds are full of your activity.
 </p>
 <h2>Development and Functionality</h2>
 <p>
@@ -28,3 +31,4 @@ On Facebook we created a function that will find each un-clicked like button on 
 <h2>Betas</h2>
 <p>Jimmy and I accidentally tested the extension on our accounts while developing, and were surprised how difficult it was to tell. However, for a more robust test we decided to install it on our friend Adam's computer and see if it could fool him. For two days he liked all of the posts and comments on his feed, as well as a bunch of recipes from an external site. <br><br>Many thanks to him for not beating us up. We're terribly sorry.
 </p>
+<img id="postimg" src="../assets/valleygirl/facebook.png" alt="logo">
