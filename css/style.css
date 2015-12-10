@@ -76,7 +76,7 @@ a:hover {text-decoration:underline;}
       2px 2px 3px #039BE5,
       3px 3px 4px #039BE5,
 	  4px 4px 4px #039BE5,
-	  5px 5px 4px #039BE5,
+	  5px 5px 4px #039BE5
 }
 
 #heroSubtitle{
@@ -266,6 +266,11 @@ a:hover {text-decoration:underline;}
   }
   #heroTitle{
 	  font-size: 3.5em;
+	  text-shadow:
+        0px 0px 1px #039BE5,
+        1px 1px 2px #039BE5,
+        2px 2px 3px #039BE5,
+        3px 3px 4px #039BE5
   }
   #heroSubtitle{
       font-size:1em;
@@ -276,9 +281,6 @@ a:hover {text-decoration:underline;}
   }
   #heroSpacer{
 	  height: 20vh;
-  }
-  #heroWrapper{
-      margin-left: 30px;
   }
  #content{
      min-width:350px;
