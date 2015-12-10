@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#313f47">
+<title>GIF Dance Party Extension</title>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href="http://tylerkrupicka.com/images/favicon.png">
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51635607-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+ </script>
+
+</head>
+
+<body>
+    <div id="postHeader">
+        <div id="postHeaderText">
+            <a href="http://tylerkrupicka.com"><img src="../images/icons/TK.png" alt="home"  id="postIcon"/></a>
+            <h2><div style="color:#fff;font-weight:400;font-size:45;padding-top: 50px;">GIF Dance Party Extension</div></h2>
+            <div id="postDate">written 2015-12-09</div>
+        </div>
+    </div>
+ <div id="content">
+    <p>Jimmy and I have finished the GIF Dance Party Chrome extension and it is now available in the chrome webstore. Enjoy!<br><br><a href="https://chrome.google.com/webstore/detail/gif-dance-party-extension/ihcnbadcckafkjidbccichfdjbahnfnn">Chrome Webstore</a></p><!-- more --><h2>The Extension</h2><p>The GIF Dance Party Extension is based on <a href="http://gifdanceparty.giphy.com">Gif Dance Party</a>, a website where you can position dancing GIFs along with music. The extension fixes a lot of the technical glitches with the site itself, and allows you to create a "party" on any webpage by clicking the extension icon.</p><h2>Development</h2><p><a href="https://github.com/jlyneu/GIF-Dance-Party-Extension">Github</a><br><br>The extension makes heavy use of JQuery and JQuery UI to make the editable GIF tiles on screen, as well as create the menus. We're using the chrome browser process messaging system to trigger Javascript audio streaming in a background process. The background process is also what registers the click on the icon to start the party. We discovered a limitation of Javascript audio however: currently looping audio is not at all seamless which does hurt the experience.</p><p>Another neat feature we added was the ability to add custom GIFs and audio files beyond what we put in the menus. Each addition is stored in the Chrome data storage and persists between uses.</p><h2>Future</h2><p>I'm currently looking in to creating a packaged version of the extension that can be embedded in to webpages by site owners. Insert "start the party" button here.<img style="display:block;margin-left:auto;margin-right:auto;"src="https://media.giphy.com/media/3o85xBH1NjrRfa8kPm/giphy.gif"></p>
+ </div>
+<div id="footer">
+<div id="footertext">&copy; Tyler Krupicka 2015</div></div>
+</body>
+</html>
+<!--Generated Using Staticky, by Tyler Krupicka -->
