@@ -97,7 +97,7 @@
 			"uses": "Arduino, 3D printing",
 			"buttons": [
 				{
-					"text": "Thingiverse",
+					"text": "THINGIVERSE",
 					"link": "http://www.thingiverse.com/thing:993541"
 				}
 			]
@@ -127,10 +127,6 @@
 				{
 					"text": "TWITTER",
 					"link": "https://twitter.com/defiantlee_"
-				},
-				{
-					"text": "SITE",
-					"link": "http://tylerkrupicka.com/defiantly"
 				}
 			]
 		},
