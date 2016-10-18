@@ -32,7 +32,7 @@
 		{
 			"title": "Social",
 			"description": "Private photo sharing application with friends.",
-			"text": "I built a photo sharing application with my friends to get experiance with server and mobile development. I primarily worked on the server backend and the Android app.",
+			"text": "I built a photo sharing application with my friends to get experience with server and mobile development. I primarily worked on the server backend and the Android app.",
 			"uses": "Go, Android, SQL, Redis, Caddy",
 			"buttons": []
 		},
@@ -51,7 +51,7 @@
 		{
 			"title": "Material Camera Stillshot",
 			"description": "Bug fixes for the new stillshot feature branch of the popular Material Camera Android camera library.",
-			"text": "I co-authored a number of bug fixes and stability improvements to a branch of the Material Camera library that allows for still photos. Changes included fixing the Android flash, updating buttons, and helping diagnose issues with Samsung devices.",
+			"text": "I co-authored a number of bug fixes and stability improvements to a branch of the Material Camera library that allows for still photos. Changes included fixing the Android flash, updating buttons, and helping diagnose issues with Samsung devices. I also helped submit a follow up patch which reduced memory usage.",
 			"uses": "Android, Java",
 			"buttons": [
 				{
