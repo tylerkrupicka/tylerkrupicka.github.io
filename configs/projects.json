@@ -20,7 +20,7 @@
 		{
 			"title": "Material-Resume",
 			"description": "The material design static site generator that builds this site.",
-			"text": "I wanted to switch from a more blog-esqe site design to one that focused on the core projects I was working on in short form. I decided to create a material design resume site with different information loaded from JSON configuration files.",
+			"text": "I wanted to switch from a more blog-esqe site design to one that focused on the core projects I was working on in short form. I decided to create a material design resume site with different information loaded from JSON configuration files. <br /><br />The current iteration works well for clones of my site, but I am planning on adding further customizability when I have time.",
 			"uses": "Python, HTML, CSS, Javascript, JQuery",
 			"buttons": [
 				{
@@ -49,14 +49,14 @@
 			]
 		},
 		{
-			"title": "Material Camera Stillshot",
-			"description": "Bug fixes for the new stillshot feature branch of the popular Material Camera Android camera library.",
-			"text": "I co-authored a number of bug fixes and stability improvements to a branch of the Material Camera library that allows for still photos. Changes included fixing the Android flash, updating buttons, and helping diagnose issues with Samsung devices. I also helped submit a follow up patch which reduced memory usage.",
+			"title": "Material Camera",
+			"description": "I am a collaborator on the popular Material Camera Android camera library.",
+			"text": "I co-authored a number of bug fixes and stability improvements to a branch of the Material Camera library that allows for still photos. Changes included fixing the Android flash, updating buttons, and helping diagnose issues with Samsung devices. I also helped submit a follow up patch which reduced memory usage. These changes resulted with a friend and I being added as collaborators on the codebase.",
 			"uses": "Android, Java",
 			"buttons": [
 				{
 					"text": "GITHUB",
-					"link": "https://github.com/afollestad/material-camera/pull/70"
+					"link": "https://github.com/afollestad/material-camera/"
 				}
 			]
 		},
