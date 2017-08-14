@@ -1,8 +1,32 @@
 {
 	"projects": [
 		{
+			"title": "Jimmy Search",
+			"description": "A parody search engine which gets results by asking my friend Jimmy.",
+			"text": "This site was a larger scale project with a server, single-page website, Android app, and React Native app. When users perform a search Jimmy receives a push notification and returns links from the app. I developed most of the server in Go and wrote a large portion of the website. The single page app uses handlebars for routing and templates. <br><br> This site reached the front page of Hacker News, was featured on Product Hunt, and made it to the top of Web Designer News. This resulted in thousands of searches over the course of a few hours, many of which Jimmy still has not gotten to.",
+			"uses": "Javascript, Go, Java, HTML, CSS",
+			"buttons": [
+				{
+					"text": "SITE",
+					"link": "https://jimmified.com"
+				},
+				{
+					"text": "GITHUB",
+					"link": "https://github.com/jimmified"
+				}
+			]
+
+		},
+		{
+			"title": "Campus Alert",
+			"description": "A website and Android app for distributing campus emergency alerts.",
+			"text": "This is an ongoing project for creating a new alerting system for college campuses. I built the web application in Vue.js so I had the opportunity to learn it as well as get more experience with Webpack and ES6 Javascript. The application runs on Firebase.",
+			"uses": "Vue.js, Webpack, Firebase",
+			"buttons": []
+		},
+		{
 			"title": "GIF Dance Party Extension",
-			"description": "A Chrome Extension inspired by FuzzyWobble's popular website.",
+			"description": "A Chrome Extension inspired by FuzzyWobble's popular website. Has ~6000 weekly users.",
 			"text": "I co-wrote the GIF Dance Party extension, which uses jQuery to create most of the user interface. The extension lets you add and rearrange dancing gifs on any webpage and add background music. I also added the functionality to stream background music from YouTube.",
 			"uses": "Javascript, JQuery, HTML, CSS",
 			"buttons": [
@@ -30,9 +54,9 @@
 			]
 		},
 		{
-			"title": "Social",
+			"title": "Photo Sharing App",
 			"description": "Private photo sharing application with friends.",
-			"text": "I built a photo sharing application with my friends to get experience with server and mobile development. I primarily worked on the server backend and the Android app.",
+			"text": "I built a photo sharing application with my friends to get experience with server and mobile development. I primarily worked on the server backend and the Android app. The app allowed users to take photos as well as view others in a feed. Users could like or dislike other photos which would create a trending feed based on a velocity algorithm.",
 			"uses": "Go, Android, SQL, Redis, Caddy",
 			"buttons": []
 		},
@@ -50,8 +74,8 @@
 		},
 		{
 			"title": "Material Camera",
-			"description": "I am a collaborator on the popular Material Camera Android camera library.",
-			"text": "I co-authored a number of bug fixes and stability improvements to a branch of the Material Camera library that allows for still photos. Changes included fixing the Android flash, updating buttons, and helping diagnose issues with Samsung devices. I also helped submit a follow up patch which reduced memory usage. These changes resulted with a friend and I being added as collaborators on the codebase.",
+			"description": "I am a collaborator on the popular Material Camera Android camera library with ~2300 stars on GitHub.",
+			"text": "I co-authored a number of bug fixes and stability improvements to a branch of the Material Camera library that allows for still photos. Changes included fixing the Android flash, updating buttons, and helping diagnose issues with Samsung devices. I also helped submit a follow up patch which reduced memory usage. A friend and I have since been added as collaborators on the codebase.",
 			"uses": "Android, Java",
 			"buttons": [
 				{

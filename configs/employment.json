@@ -1,16 +1,22 @@
 {
 	"jobs": [
 		{
+			"title": "Intuit",
+			"position": "Software Engineer",
+			"dates": "2017 January - July",
+			"text": "Software Engineer on the Assisted Care and Expert Services teams. I developed features for the TurboTax help system and administrator sites used for routing customers to agents. I used Angular/React on the front-end site and JBOSS/SpringBoot for back-end services."
+		},
+		{
 			"title": "Makerbot",
 			"position": "Firmware Engineer",
 			"dates": "2016 Summer",
-			"text": "Developed patches for 3D printer firmware, and configured the Linux device tree for different peripheral hardware components."
+			"text": "Developed patches for 3D printer firmware (written in C++ and Python), and configured the Linux device tree for different peripheral hardware components."
 		},
 		{
 			"title": "Intuit",
 			"position": "Software Engineer",
 			"dates": "2015 July - December",
-			"text": "Software Engineer on the Technology Exploration team at TurboTax. I worked on technologies involving natural language processing, virtual assistance, support/care, data analysis, and mobile development using a wide variety of programming languages and environments."
+			"text": "Software Engineer on the Technology Exploration team at TurboTax. Our team was responsible for prototyping and testing new features for TurboTax such as screen-sharing, live video for agents, improved natural language processing, and chat bots. I also prototyped the TurboTax Alexa Skill."
 		},
 		{
 			"title": "RIT CIAS",
