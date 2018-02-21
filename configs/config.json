@@ -1,10 +1,10 @@
 {
-    "about": "I'm a software engineer from Newberg, Oregon. I attend Rochester Institute of Technology, where I study computer engieering with a minor in computer science. I am looking for a full-time software engineering position after I graduate in May 2018. This site was built using my <a href='http://github.com/tylerkrupicka/material-resume'>material-resume</a> static site generator.",
-    "color": "#039BE5",
+	"about": "I'm a software engineer from Newberg, Oregon. I attend Rochester Institute of Technology, where I study computer engieering with a minor in computer science. This site was built using my <a href='http://github.com/tylerkrupicka/material-resume'>material-resume</a> static site generator.",
+	"color": "#039BE5",
 	"ripple_rgb": "3, 155, 229",
-    "favicon": "http://tylerkrupicka.com/images/favicon.png",
-    "subtitle": "Engineer &amp; Software Developer",
-    "title": "Tyler Krupicka",
+	"favicon": "http://tylerkrupicka.com/images/favicon.png",
+	"subtitle": "Engineer &amp; Software Developer",
+	"title": "Tyler Krupicka",
 	"icons": [
 		{
 			"id": "&#xe237;",
