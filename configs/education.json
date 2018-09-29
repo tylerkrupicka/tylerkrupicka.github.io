@@ -1,9 +1,9 @@
 {
-	"schools": [
-		{
-			"title": "Rochester Institute of Technology",
-			"subtitle": "Computer Engineering Major &amp; Computer Science Minor <br />2013 - Present",
-			"text": "Notable Coursework: Computer Science 1-3, Digital Systems Design 1-2, Intelligent Systems, Natural Language Processing, Assembly Language, Software Engineering, Analysis of Algorithms, Computer Architecure, Interfacing Electronics, Applied Programming, Introduction to Cryptography, Statistics. 3.66 GPA."
-		}
-	]
+  "schools": [
+    {
+      "title": "Rochester Institute of Technology",
+      "subtitle": "Computer Engineering Major &amp; Computer Science Minor <br />2013 - 2018",
+      "text": "Notable Coursework: Computer Science 1-3, Digital Systems Design 1-2, Intelligent Systems, Natural Language Processing, Assembly Language, Software Engineering, Analysis of Algorithms, Computer Architecure, Interfacing Electronics, Applied Programming, Cryptography, Databases. 3.7 GPA."
+    }
+  ]
 }

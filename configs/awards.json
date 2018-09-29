@@ -1,40 +1,58 @@
 {
-	"awards": [
-		{
-			"title": "Intuit Dream Hackathon",
-			"subtitle": "People's Choice Award",
-			"dates": "Spring 2017",
-			"text": "Won the People's Choice award with a talented team of interns during a TurboTax hackathon."
-		},
-		{
-			"title": "Intuit Codechella Hackathon",
-			"subtitle": "1st Place",
-			"dates": "Fall 2015",
-			"text": "1st place with a talented team of interns during a TurboTax co-op hackathon."
-		},
-		{
-			"title": "RIT Autonomous Drone Challenge",
-			"subtitle": "2nd Place",
-			"dates": "Spring 2015",
-			"text": "Developed an autonomous routine for a Parrot AR Drone using Node.js and OpenCV. My team successfully trained a Haar Classifier in order to have the drone detect Jetson's characters."
-		},
-		{
-			"title": "RIT Gobblet AI Tournament",
-			"subtitle": "2nd Place",
-			"dates": "Spring 2014",
-			"text": "My team developed a Java player for the board game 'Gobblet' that placed second in the department AI tournament. Our AI used primarily game strategy and pruning to win."
-		},
-		{
-			"title": "FIRST Tech Challenge Robotics Oregon Championship",
-			"subtitle": "Winning Alliance",
-			"dates": "Spring 2013",
-			"text": "I co-founded and captained my high school's FTC team. My senior year we were in the winning alliance at the Oregon state championship and progressed to the world championships in St. Louis."
-		},
-		{
-			"title": "FIRST Tech Challenge Robotics Nevada Championship",
-			"subtitle": "Inspire Award",
-			"dates": "Spring 2013",
-			"text": "I co-founded and captained my high school's FTC team. My senior year we made a trip to Nevada where we were a team captain in the finals and won the inspire award."
-		}
-	]
+  "awards": [
+    {
+      "title": "RIT STEAM Prize",
+      "subtitle": "First Place",
+      "dates": "Spring 2018",
+      "text": "Our project Clockwyse won the first ever RIT Department of Criminal Justice award for technology in public safety."
+    },
+    {
+      "title": "New York Business Plan Competition",
+      "subtitle": "3rd Place (Technology Track)",
+      "dates": "Spring 2018",
+      "text": "Placed third in the New York state business plan competition in Albany for Clockwyse."
+    },
+    {
+      "title": "Finger Lakes Business Plan Competition",
+      "subtitle": "Finalist (Technology Track)",
+      "dates": "Spring 2018",
+      "text": "Was one of two teams to advance from the regional business plan competition for Clockwyse."
+    },
+    {
+      "title": "Intuit Dream Hackathon",
+      "subtitle": "People's Choice Award",
+      "dates": "Spring 2017",
+      "text": "Won the People's Choice award with a talented team of interns during a TurboTax hackathon."
+    },
+    {
+      "title": "Intuit Codechella Hackathon",
+      "subtitle": "1st Place",
+      "dates": "Fall 2015",
+      "text": "1st place with a talented team of interns during a TurboTax co-op hackathon."
+    },
+    {
+      "title": "RIT Autonomous Drone Challenge",
+      "subtitle": "2nd Place",
+      "dates": "Spring 2015",
+      "text": "Developed an autonomous routine for a Parrot AR Drone using Node.js and OpenCV. My team successfully trained a Haar Classifier in order to have the drone detect Jetson's characters."
+    },
+    {
+      "title": "RIT Gobblet AI Tournament",
+      "subtitle": "2nd Place",
+      "dates": "Spring 2014",
+      "text": "My team developed a Java player for the board game 'Gobblet' that placed second in the department AI tournament. Our AI used primarily game strategy and pruning to win."
+    },
+    {
+      "title": "FIRST Tech Challenge Robotics Oregon Championship",
+      "subtitle": "Winning Alliance",
+      "dates": "Spring 2013",
+      "text": "I co-founded and captained my high school's FTC team. My senior year we were in the winning alliance at the Oregon state championship and progressed to the world championships in St. Louis."
+    },
+    {
+      "title": "FIRST Tech Challenge Robotics Nevada Championship",
+      "subtitle": "Inspire Award",
+      "dates": "Spring 2013",
+      "text": "I co-founded and captained my high school's FTC team. My senior year we made a trip to Nevada where we were a team captain in the finals and won the inspire award."
+    }
+  ]
 }

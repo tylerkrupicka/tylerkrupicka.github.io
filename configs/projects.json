@@ -1,170 +1,173 @@
 {
-	"projects": [
-		{
-			"title": "Jimmy Search",
-			"description": "A parody search engine which gets results by asking my friend Jimmy.",
-			"text": "This site was a larger scale project with a server, single-page website, Android app, and React Native app. When users perform a search Jimmy receives a push notification and returns links from the app. I developed most of the server in Go and wrote a large portion of the website. The single page app uses handlebars for routing and templates. <br><br> This site reached the front page of Hacker News, was featured on Product Hunt, and made it to the top of Web Designer News. This resulted in thousands of searches over the course of a few hours, many of which Jimmy still has not gotten to.",
-			"uses": "Javascript, Go, Java, HTML, CSS",
-			"buttons": [
-				{
-					"text": "SITE",
-					"link": "https://jimmified.com"
-				},
-				{
-					"text": "GITHUB",
-					"link": "https://github.com/jimmified"
-				}
-			]
-
-		},
-		{
-			"title": "Campus Alert",
-			"description": "A website and Android app for distributing campus emergency alerts.",
-			"text": "This is an ongoing project for creating a new alerting system for college campuses. I built the web application in Vue.js so I had the opportunity to learn it as well as get more experience with Webpack and ES6 Javascript. The application runs on Firebase.",
-			"uses": "Vue.js, Webpack, Firebase",
-			"buttons": []
-		},
-		{
-			"title": "GIF Dance Party Extension",
-			"description": "A Chrome Extension inspired by FuzzyWobble's popular website. Has ~6000 weekly users.",
-			"text": "I co-wrote the GIF Dance Party extension, which uses jQuery to create most of the user interface. The extension lets you add and rearrange dancing gifs on any webpage and add background music. I also added the functionality to stream background music from YouTube.",
-			"uses": "Javascript, JQuery, HTML, CSS",
-			"buttons": [
-				{
-					"text": "GITHUB",
-					"link": "https://github.com/jlyneu/GIF-Dance-Party-Extension"
-				},
-				{
-					"text": "CHROME",
-					"link": "https://chrome.google.com/webstore/detail/gif-dance-party-extension/ihcnbadcckafkjidbccichfdjbahnfnn"
-				}
-			]
-
-		},
-		{
-			"title": "Material-Resume",
-			"description": "The material design static site generator that builds this site.",
-			"text": "I wanted to switch from a more blog-esqe site design to one that focused on the core projects I was working on in short form. I decided to create a material design resume site with different information loaded from JSON configuration files. <br /><br />The current iteration works well for clones of my site, but I am planning on adding further customizability when I have time.",
-			"uses": "Python, HTML, CSS, Javascript, JQuery",
-			"buttons": [
-				{
-					"text": "GITHUB",
-					"link": "http://github.com/tylerkrupicka/material-resume"
-				}
-			]
-		},
-		{
-			"title": "Photo Sharing App",
-			"description": "Private photo sharing application with friends.",
-			"text": "I built a photo sharing application with my friends to get experience with server and mobile development. I primarily worked on the server backend and the Android app. The app allowed users to take photos as well as view others in a feed. Users could like or dislike other photos which would create a trending feed based on a velocity algorithm.",
-			"uses": "Go, Android, SQL, Redis, Caddy",
-			"buttons": []
-		},
-		{
-			"title": "Cookie Cutter",
-			"description": "Patches for a Python library that allows you to use Chrome and Firefox cookies in your python programs.",
-			"text": "I co-authored some patches to the browser-cookie3 Python package which allows you to retrieve browser cookies from Firefox and Chrome SQL storage. I added Windows support and fixed a number of the cryptography dependencies, as well as added some better filtering to the SQL query. Using this package I'm able to automate use of website API's using my own cookies.",
-			"uses": "Python",
-			"buttons": [
-				{
-					"text": "GITHUB",
-					"link": "https://github.com/tylerkrupicka/cookie-cutter"
-				}
-			]
-		},
-		{
-			"title": "Material Camera",
-			"description": "I am a collaborator on the popular Material Camera Android camera library with ~2300 stars on GitHub.",
-			"text": "I co-authored a number of bug fixes and stability improvements to a branch of the Material Camera library that allows for still photos. Changes included fixing the Android flash, updating buttons, and helping diagnose issues with Samsung devices. I also helped submit a follow up patch which reduced memory usage. A friend and I have since been added as collaborators on the codebase.",
-			"uses": "Android, Java",
-			"buttons": [
-				{
-					"text": "GITHUB",
-					"link": "https://github.com/afollestad/material-camera/"
-				}
-			]
-		},
-		{
-			"title": "Valleygirl",
-			"description": "A Chrome extension that discreetly clicks every Facebook like button.",
-			"text": "This Chrome extension is meant as a prank, but essentially it will click every Facebook like button on every webpage. After clicking the button, it hides all of the changes so that the user cannot tell what is happening. I have a few friends who can verify that it works. This extension briefly made the front page of HackerNews.",
-			"uses": "Javascript, JQuery",
-			"buttons": [
-				{
-					"text": "GITHUB",
-					"link": "https://github.com/tylerkrupicka/valleygirl"
-				},
-				{
-					"text": "CHROME",
-					"link": "https://chrome.google.com/webstore/detail/valley-girl/aaobhafeeoijpgnohafhbpjldeoldpin"
-				}
-			]
-		},
-		{
-			"title": "3D Printer",
-			"description": "I built and upgraded a Kossel Clear 3D printer.",
-			"text": "I built a a Kossel Clear 3D printer using the acrylic parts sold by Blue Eagle Labs and parts I ordered online. I've made a number of improvements to the carriage and added a spool holder to the frame.",
-			"uses": "Arduino, Ramps 1.3",
-			"buttons": []
-		},
-		{
-			"title": "Glados Alexa Skill",
-			"description": "I wrote an Amazon Alexa skill that responded with Glados quotes.",
-			"text": "I created a simple Alexa skill as a personal project after gaining some experience with the platform at work. The skill ran in an AWS Lambda function and would respond with Glados quotes when prompted.",
-			"uses": "AWS, Alexa Skills Kit, Node.js",
-			"buttons": []
-		},
-		{
-			"title": "Thomas the Timelapse Engine",
-			"description": "Turning a Brio toy train in to a pulsing GoPro timelapse rig.",
-			"text": "I dissasembled a Brio Thomas the Tank Engine toy train and added control from an Arduino and some 3D printed parts. By doubling the trains input voltage, I was able to get the train to move small distances after each photo and make a semi-stable timelapse. I took a timelapse of a 3D print with the train taking a circular timelapse.",
-			"uses": "Arduino, 3D printing",
-			"buttons": [
-				{
-					"text": "THINGIVERSE",
-					"link": "http://www.thingiverse.com/thing:993541"
-				}
-			]
-		},
-		{
-			"title": "Staticky",
-			"description": "My first static site generator.",
-			"text": "I built my own templating system and static site generator in order to generate blog websites. This was used to run my personal website for two years.",
-			"uses": "Python, HTML, CSS",
-			"buttons": [
-				{
-					"text": "GITHUB",
-					"link": "https://github.com/tylerkrupicka/staticky"
-				}
-			]
-		},
-		{
-			"title": "Defiantly",
-			"description": "A Twitter bot and website that used grammar chunking and a Naive Bayes classifier to correct misuse of the word 'defiantly' on Twitter.",
-			"text": "I built a Naive Bayes classifier to predict when users on Twitter were incorrectly typing 'defiantly' instead of 'definitely'. Once the Twitter bot started getting noticed it had its API token revoked, so I turned the classifier in to a Django website of misuse.",
-			"uses": "Python, NLTK, Django, Tweepy",
-			"buttons": [
-				{
-					"text": "GITHUB",
-					"link": "https://github.com/tylerkrupicka/DefiantLee"
-				},
-				{
-					"text": "TWITTER",
-					"link": "https://twitter.com/defiantlee_"
-				}
-			]
-		},
-		{
-			"title": "PlayVis",
-			"description": "Natural language processing analysis for Shakespeare.",
-			"text": "This project was actually an open-ended class project during my first year at RIT. My partner and I developed a parser for Project Gutenberg Shakespeare plays that would find character connections and score character sentiment over the course of the play. My partner developed a Javascript visualizer for the relationships.",
-			"uses": "Python, NLTK",
-			"buttons": [
-				{
-					"text": "GITHUB",
-					"link": "https://github.com/Nolski/playvis"
-				}
-			]
-		}
-	]
+  "projects": [
+    {
+      "title": "Jimmy Search",
+      "description": "A parody search engine which gets results by asking my friend Jimmy.",
+      "text": "This site was a larger scale project with a server, single-page website, Android app, and React Native app. When users perform a search Jimmy receives a push notification and returns links from the app. I developed most of the server in Go and wrote a large portion of the website. The single page app uses handlebars for routing and templates. <br><br> This site reached the front page of Hacker News, was featured on Product Hunt, and made it to the top of Web Designer News. This resulted in thousands of searches over the course of a few hours, many of which Jimmy still has not gotten to. <br><br>EDIT (2018): The API is no longer being operated. Thank you to the thousands of people who submitted searches!",
+      "uses": "Javascript, Go, Java, HTML, CSS",
+      "buttons": [
+        {
+          "text": "SITE",
+          "link": "https://jimmified.com"
+        },
+        {
+          "text": "GITHUB",
+          "link": "https://github.com/jimmified"
+        }
+      ]
+    },
+    {
+      "title": "Clockwyse",
+      "description": "A website and device clients for distributing campus emergency alerts.",
+      "text": "This is an ongoing project creating a new alerting system for college campuses. I built the web application in Vue.js so I had the opportunity to learn it as well as get more experience with Webpack and ES6 Javascript. The application runs on Google Cloud.",
+      "uses": "Vue.js, Webpack, Firebase",
+      "buttons": [
+        {
+          "text": "SITE",
+          "link": "https://clockwyse.io"
+        }
+      ]
+    },
+    {
+      "title": "GIF Dance Party Extension",
+      "description": "A Chrome Extension inspired by FuzzyWobble's popular website. Has ~26000 weekly users.",
+      "text": "I co-wrote the GIF Dance Party extension, which uses jQuery to create most of the user interface. The extension lets you add and rearrange dancing gifs on any webpage and add background music. I also added the functionality to stream background music from YouTube.",
+      "uses": "Javascript, JQuery, HTML, CSS",
+      "buttons": [
+        {
+          "text": "GITHUB",
+          "link": "https://github.com/jlyneu/GIF-Dance-Party-Extension"
+        },
+        {
+          "text": "CHROME",
+          "link": "https://chrome.google.com/webstore/detail/gif-dance-party-extension/ihcnbadcckafkjidbccichfdjbahnfnn"
+        }
+      ]
+    },
+    {
+      "title": "Material-Resume",
+      "description": "The material design static site generator that builds this site.",
+      "text": "I wanted to switch from a more blog-esqe site design to one that focused on the core projects I was working on in short form. I decided to create a material design resume site with different information loaded from JSON configuration files. <br /><br />The current iteration works well for clones of my site, but I am planning on adding further customizability when I have time.",
+      "uses": "Python, HTML, CSS, Javascript, JQuery",
+      "buttons": [
+        {
+          "text": "GITHUB",
+          "link": "http://github.com/tylerkrupicka/material-resume"
+        }
+      ]
+    },
+    {
+      "title": "Photo Sharing App",
+      "description": "Private photo sharing application with friends.",
+      "text": "I built a photo sharing application with my friends to get experience with server and mobile development. I primarily worked on the server backend and the Android app. The app allowed users to take photos as well as view others in a feed. Users could like or dislike other photos which would create a trending feed based on a velocity algorithm.",
+      "uses": "Go, Android, SQL, Redis, Caddy",
+      "buttons": []
+    },
+    {
+      "title": "Cookie Cutter",
+      "description": "Patches for a Python library that allows you to use Chrome and Firefox cookies in your python programs.",
+      "text": "I co-authored some patches to the browser-cookie3 Python package which allows you to retrieve browser cookies from Firefox and Chrome SQL storage. I added Windows support and fixed a number of the cryptography dependencies, as well as added some better filtering to the SQL query. Using this package I'm able to automate use of website API's using my own cookies.",
+      "uses": "Python",
+      "buttons": [
+        {
+          "text": "GITHUB",
+          "link": "https://github.com/tylerkrupicka/cookie-cutter"
+        }
+      ]
+    },
+    {
+      "title": "Material Camera",
+      "description": "I am a collaborator on the popular Material Camera Android camera library with ~2300 stars on GitHub.",
+      "text": "I co-authored a number of bug fixes and stability improvements to a branch of the Material Camera library that allows for still photos. Changes included fixing the Android flash, updating buttons, and helping diagnose issues with Samsung devices. I also helped submit a follow up patch which reduced memory usage. A friend and I have since been added as collaborators on the codebase.",
+      "uses": "Android, Java",
+      "buttons": [
+        {
+          "text": "GITHUB",
+          "link": "https://github.com/afollestad/material-camera/"
+        }
+      ]
+    },
+    {
+      "title": "Valleygirl",
+      "description": "A Chrome extension that discreetly clicks every Facebook like button.",
+      "text": "This Chrome extension is meant as a prank, but essentially it will click every Facebook like button on every webpage. After clicking the button, it hides all of the changes so that the user cannot tell what is happening. I have a few friends who can verify that it works. This extension briefly made the front page of HackerNews.",
+      "uses": "Javascript, JQuery",
+      "buttons": [
+        {
+          "text": "GITHUB",
+          "link": "https://github.com/tylerkrupicka/valleygirl"
+        },
+        {
+          "text": "CHROME",
+          "link": "https://chrome.google.com/webstore/detail/valley-girl/aaobhafeeoijpgnohafhbpjldeoldpin"
+        }
+      ]
+    },
+    {
+      "title": "3D Printer",
+      "description": "I built and upgraded a Kossel Clear 3D printer.",
+      "text": "I built a a Kossel Clear 3D printer using the acrylic parts sold by Blue Eagle Labs and parts I ordered online. I've made a number of improvements to the carriage and added a spool holder to the frame.",
+      "uses": "Arduino, Ramps 1.3",
+      "buttons": []
+    },
+    {
+      "title": "Glados Alexa Skill",
+      "description": "I wrote an Amazon Alexa skill that responded with Glados quotes.",
+      "text": "I created a simple Alexa skill as a personal project after gaining some experience with the platform at work. The skill ran in an AWS Lambda function and would respond with Glados quotes when prompted.",
+      "uses": "AWS, Alexa Skills Kit, Node.js",
+      "buttons": []
+    },
+    {
+      "title": "Thomas the Timelapse Engine",
+      "description": "Turning a Brio toy train in to a pulsing GoPro timelapse rig.",
+      "text": "I dissasembled a Brio Thomas the Tank Engine toy train and added control from an Arduino and some 3D printed parts. By doubling the trains input voltage, I was able to get the train to move small distances after each photo and make a semi-stable timelapse. I took a timelapse of a 3D print with the train taking a circular timelapse.",
+      "uses": "Arduino, 3D printing",
+      "buttons": [
+        {
+          "text": "THINGIVERSE",
+          "link": "http://www.thingiverse.com/thing:993541"
+        }
+      ]
+    },
+    {
+      "title": "Staticky",
+      "description": "My first static site generator.",
+      "text": "I built my own templating system and static site generator in order to generate blog websites. This was used to run my personal website for two years.",
+      "uses": "Python, HTML, CSS",
+      "buttons": [
+        {
+          "text": "GITHUB",
+          "link": "https://github.com/tylerkrupicka/staticky"
+        }
+      ]
+    },
+    {
+      "title": "Defiantly",
+      "description": "A Twitter bot and website that used grammar chunking and a Naive Bayes classifier to correct misuse of the word 'defiantly' on Twitter.",
+      "text": "I built a Naive Bayes classifier to predict when users on Twitter were incorrectly typing 'defiantly' instead of 'definitely'. Once the Twitter bot started getting noticed it had its API token revoked, so I turned the classifier in to a Django website of misuse.",
+      "uses": "Python, NLTK, Django, Tweepy",
+      "buttons": [
+        {
+          "text": "GITHUB",
+          "link": "https://github.com/tylerkrupicka/DefiantLee"
+        },
+        {
+          "text": "TWITTER",
+          "link": "https://twitter.com/defiantlee_"
+        }
+      ]
+    },
+    {
+      "title": "PlayVis",
+      "description": "Natural language processing analysis for Shakespeare.",
+      "text": "This project was actually an open-ended class project during my first year at RIT. My partner and I developed a parser for Project Gutenberg Shakespeare plays that would find character connections and score character sentiment over the course of the play. My partner developed a Javascript visualizer for the relationships.",
+      "uses": "Python, NLTK",
+      "buttons": [
+        {
+          "text": "GITHUB",
+          "link": "https://github.com/Nolski/playvis"
+        }
+      ]
+    }
+  ]
 }

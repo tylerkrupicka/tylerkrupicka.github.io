@@ -1,22 +1,22 @@
 {
-	"about": "I'm a software engineer from Newberg, Oregon. I attend Rochester Institute of Technology, where I study computer engieering with a minor in computer science. This site was built using my <a href='http://github.com/tylerkrupicka/material-resume'>material-resume</a> static site generator.",
-	"color": "#039BE5",
-	"ripple_rgb": "3, 155, 229",
-	"favicon": "http://tylerkrupicka.com/images/favicon.png",
-	"subtitle": "Engineer &amp; Software Developer",
-	"title": "Tyler Krupicka",
-	"icons": [
-		{
-			"id": "&#xe237;",
-			"url": "http://github.com/tylerkrupicka"
-		},
-		{
-			"id": "&#xe224;",
-			"url": "mailto:site@tylerkrupicka.com"
-		},
-		{
-			"id": "&#xe252;",
-			"url": "http://linkedin.com/in/tylerkrupicka"
-		}
-	]
+  "about": "Hi, I'm Tyler. I'm a software engineer currently working at Intuit in San Diego. I use this site as a comprehensive list of my experience and projects.",
+  "color": "#039BE5",
+  "ripple_rgb": "3, 155, 229",
+  "favicon": "http://tylerkrupicka.com/images/favicon.png",
+  "subtitle": "Engineer &amp; Software Developer",
+  "title": "Tyler Krupicka",
+  "icons": [
+    {
+      "id": "&#xe237;",
+      "url": "http://github.com/tylerkrupicka"
+    },
+    {
+      "id": "&#xe224;",
+      "url": "mailto:site@tylerkrupicka.com"
+    },
+    {
+      "id": "&#xe252;",
+      "url": "http://linkedin.com/in/tylerkrupicka"
+    }
+  ]
 }
