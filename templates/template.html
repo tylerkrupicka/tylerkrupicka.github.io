@@ -14,7 +14,7 @@
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/script.js"></script>
 	<script type="text/javascript">
-    var _gaq =s _gaq || [];
+    var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-51635607-1']);
     _gaq.push(['_trackPageview']);
 
@@ -32,11 +32,11 @@
 			<div id="title-bar">
 				<div>
 					<h1>{{ title }}</h1>
-					<h2 id="subtitle">{{ subtitle }}</h4>
+					<div id="subtitle">{{ subtitle }}</div>
 				</div>
 				<div>
 					{% for icon in icons %}
-					<a href='{{ icon.url }}' class='symbol' title='{{ icon.id }}'></a>
+					<a href='{{ icon.url }}' class='symbol' title='{{ icon.id }}' aria-label='{{ icon.label }}'></a>
 					{% endfor %}
 				</div>
 			</div>
@@ -44,14 +44,14 @@
 
 	<div id="page-wrap">
 		<div class="card">
-			<div class="card-title">About</div>
+			<h2 class="card-title">About</h2>
 			<div class="card-text">{{ about }}</div>
 		</div>
 
 		<div class="card">
-			<div class="card-title">Education</div>
+			<h2 class="card-title">Education</h2>
 			{% for school in schools%}
-			<div class="card-list-element">
+			<div class="card-list-element" role="button" tabindex="0" aria-expanded="false">
 				<div class="card-list-title">{{ school.title }}</div>
 				<div class="card-list-subtitle">{{ school.subtitle }}</div>
 				<div class="card-hidden">
@@ -62,9 +62,9 @@
 		</div>
 
 		<div class="card">
-			<div class="card-title">Employment</div>
+			<h2 class="card-title">Employment</h2>
 			{% for job in jobs %}
-			<div class="card-list-element">
+			<div class="card-list-element" role="button" tabindex="0" aria-expanded="false">
 				<div class="card-list-title">{{ job.title }}</div>
 				<div class="card-list-subtitle">{{ job.position }} <br /> {{ job.dates }}</div>
 				<div class="card-hidden">
@@ -75,7 +75,7 @@
 		</div>
 
 		<div class="card">
-			<div class="card-title">Experience</div>
+			<h2 class="card-title">Experience</h2>
 			<div class="card-list-element no_select small">
 				<b class="no_select">Proficent:</b> {{ experiences.proficient }}
 			</div>
@@ -91,9 +91,9 @@
 		</div>
 
 		<div class="card">
-			<div class="card-title">Projects</div>
+			<h2 class="card-title">Projects</h2>
 			{% for project in projects %}
-			<div class="card-list-element small">
+			<div class="card-list-element small" role="button" tabindex="0" aria-expanded="false">
 				<b>{{ project.title }}:</b> {{ project.description }}
 				<div class="card-hidden">
 					<div class="card-list-text">{{ project.text }}</div>
@@ -112,9 +112,9 @@
 		</div>
 
 		<div class="card">
-			<div class="card-title">Awards</div>
+			<h2 class="card-title">Awards</h2>
 			{% for award in awards %}
-			<div class="card-list-element">
+			<div class="card-list-element" role="button" tabindex="0" aria-expanded="false">
 				<div class="card-list-title">{{ award.title }}</div>
 				<div class="card-list-subtitle">{{ award.subtitle }} <br /> {{ award.dates }}</div>
 				<div class="card-hidden">
@@ -125,7 +125,7 @@
 		</div>
 
 		<div class="card">
-			<div class="card-title">Activites</div>
+			<h2 class="card-title">Activites</h2>
 			{% for activity in activities %}
 			<div class="card-list-element no_select small">
 				<b class="no_select">{{ activity.title }}:</b> {{ activity.description }}
@@ -133,8 +133,11 @@
 			{% endfor %}
 		</div>
 
-		<div id="footer">&copy; {{ title }}</div>
-		<div id="recognition">Generated using <a href="https://github.com/tylerkrupicka/material-resume">Material-Resume</a></div>
+		<footer>
+			<div id="footer">&copy; {{ title }}</div>
+			<div id="recognition">Generated using <a href="https://github.com/tylerkrupicka/material-resume">Material-Resume</a></div>
+		</footer>
+		
 	</div>
 
 

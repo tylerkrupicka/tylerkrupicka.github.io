@@ -1,8 +1,8 @@
 {
   "experiences": {
-    "proficient": "Python, ES6 Javascript (Vue, React, Angular), Java, Go,  HTML, CSS.",
+    "proficient": "Python, Typescript, ES6 Javascript (Vue, React, Angular), Java, Go, HTML, CSS.",
     "some": "C, C++, ARM Assembly, VHDL, Natural Language Processing, Android Development, React Native, Node.js, PHP.",
-    "frameworks": "Webpack, Docker, Django, Flask, Caddy, NLTK, Gensim, Redis, ElasticSearch, SQL, OpenCV, Alexa SDK. ",
-    "tools": "Linux/Windows/Mac, Git, SVN, JIRA, AWS, Firebase, Github, Gitlab, Jenkins."
+    "frameworks": "Babel, Webpack, Browser Extensions, PostCSS, Probot, Docker, Django, Flask, Caddy, NLTK, Redis, ElasticSearch, SQL, OpenCV, Alexa SDK.",
+    "tools": "Linux/Windows/Mac,VSCode, Git, JIRA, AWS, Firebase, Github, Gitlab, Jenkins."
   }
 }

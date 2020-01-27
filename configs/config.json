@@ -8,15 +8,18 @@
   "icons": [
     {
       "id": "&#xe237;",
-      "url": "http://github.com/tylerkrupicka"
+      "url": "http://github.com/tylerkrupicka",
+      "label": "Github"
     },
     {
       "id": "&#xe224;",
-      "url": "mailto:site@tylerkrupicka.com"
+      "url": "mailto:site@tylerkrupicka.com",
+      "label": "Email"
     },
     {
       "id": "&#xe252;",
-      "url": "http://linkedin.com/in/tylerkrupicka"
+      "url": "http://linkedin.com/in/tylerkrupicka",
+      "label": "LinkedIn"
     }
   ]
 }

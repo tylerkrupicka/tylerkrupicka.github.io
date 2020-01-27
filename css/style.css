@@ -59,11 +59,12 @@ body {
 
 #subtitle {
 	font-weight: 300;
+	font-size: 20px;
 	padding-left: 2px;
 }
 
 #footer {
-	padding-top: 20px;
+	padding-top: 24px;
 	text-align: center;
 	color: rgba(0, 0, 0, 0.57);
 	font-weight: 400;

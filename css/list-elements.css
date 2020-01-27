@@ -9,6 +9,10 @@
 	overflow: hidden;
 }
 
+.card-list-element:focus {
+	border: 1px solid rgba(0, 0, 0, 0.87);
+}
+
 .card-list-element.small {
 	min-height: 20px;
 	padding: 20 40 20 40;

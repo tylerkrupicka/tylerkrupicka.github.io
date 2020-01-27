@@ -6,6 +6,13 @@ $(document).ready(function() {
 			materialRipple(this, e);
 		}
 	});
+	$(".card-list-element").on('keyup', function(e) {
+		if (e.keyCode !== 13) return;
+		if(e.target.className != "card-button" && e.target.className.indexOf("no_select") == -1){
+			expandToggle(this);
+			materialRipple(this, e);
+		}
+	});
 });
 
 /* Expand or contract to show hidden information using jQuery */
@@ -13,12 +20,15 @@ function expandToggle(element) {
 	var hidden = $(element).find('.card-hidden');
 	var text = $(element).find('.card-list-text');
 	if ($(hidden).is(":visible")) {
+		// Hide it
+		$(element).attr("aria-expanded","false");
 		$(text).animate({
 			opacity: "0"
 		}, 100, function() {
 			$(hidden).slideUp(200);
 		});
 	} else {
+		$(element).attr("aria-expanded","true");
 		$(hidden).slideDown(200, function() {
 			$(text).animate({
 				opacity: "1"

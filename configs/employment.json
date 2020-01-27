@@ -2,9 +2,15 @@
   "jobs": [
     {
       "title": "Intuit",
+      "position": "Senior Software Engineer",
+      "dates": "2019 August - Present",
+      "text": "Currently working on TurboTax interview, UI tooling, build infrastructure, and Intuit-wide design systems. I'm also the accessibility lead for the TurboTax interview experience."
+    },
+    {
+      "title": "Intuit",
       "position": "Software Engineer 2",
-      "dates": "2018 July - Present",
-      "text": "Currently developing the React rendering engine used for the core TurboTax experience."
+      "dates": "2018 July - 2019 August",
+      "text": "Worked on the React rendering engine used for the core TurboTax experience. I implemented tools for measuring UI performance, removed ~95% of Axe accessibility violations from TurboTax interview, developed tools to simplify bug reporting, and led migration to a new build pipeline."
     },
     {
       "title": "Intuit",

@@ -1,13 +1,37 @@
 {
   "projects": [
     {
+      "title": "PostCSS Themed",
+      "description": "A PostCSS plugin for simple cross-product component theming.",
+      "text": "A PostCSS plugin built for internal use on Intuit design systems. It allows us to have components themed across Intuit products, with support for light and dark mode.",
+      "uses": "Typescript, PostCSS",
+      "buttons": [
+        {
+          "text": "GITHUB",
+          "link": "https://github.com/intuit/postcss-themed"
+        }
+      ]
+    },
+    {
+      "title": "Vue JSON Component",
+      "description": "A simple JSON tree view built for performance, accessibility, and customization.",
+      "text": "This component was built after finding many of the existing JSON tree components for Vue to be large and difficult to customize. It was my first experience publishing a standalone Vue component written in Typescript.",
+      "uses": "Vue.js, Typescript, Rollup",
+      "buttons": [
+        {
+          "text": "GITHUB",
+          "link": "https://github.com/tylerkrupicka/vue-json-component"
+        }
+      ]
+    },
+    {
       "title": "Jimmy Search",
       "description": "A parody search engine which gets results by asking my friend Jimmy.",
       "text": "This site was a larger scale project with a server, single-page website, Android app, and React Native app. When users perform a search Jimmy receives a push notification and returns links from the app. I developed most of the server in Go and wrote a large portion of the website. The single page app uses handlebars for routing and templates. <br><br> This site reached the front page of Hacker News, was featured on Product Hunt, and made it to the top of Web Designer News. This resulted in thousands of searches over the course of a few hours, many of which Jimmy still has not gotten to. <br><br>EDIT (2018): The API is no longer being operated. Thank you to the thousands of people who submitted searches!",
       "uses": "Javascript, Go, Java, HTML, CSS",
       "buttons": [
         {
-          "text": "SITE",
+          "text": "SITE (DEAD)",
           "link": "https://jimmified.com"
         },
         {

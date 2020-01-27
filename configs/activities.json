@@ -1,6 +1,10 @@
 {
 	"activities": [
 		{
+			"title": "FIRST FTA",
+			"description": "I volunteer as a Field Technical Advisor for FIRST events."
+		},
+		{
 			"title": "RIT Competitive Cybersecurity Club",
 			"description": "I attend meetings and complete weekly challenges on different cybersecurity techniques."
 		},
