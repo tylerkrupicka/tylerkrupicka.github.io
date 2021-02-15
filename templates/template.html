@@ -1,146 +1,188 @@
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="{{ color }}" />
+    <title>{{ title }}</title>
+    <style>
+      a {color:{{ color }};}
+      .ripple {background: rgba({{ ripple_rgb }}, 0.4);}
+    </style>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-51635607-1"]);
+      _gaq.push(["_trackPageview"]);
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="{{ color }}">
-	<title>{{ title }}</title>
-	<style>
-		a {color:{{ color }};}
-		.ripple {background: rgba({{ ripple_rgb }}, 0.4);}
-	</style>
-	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-	<script src="js/jquery-3.1.0.min.js"></script>
-	<script src="js/script.js"></script>
-	<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-51635607-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
     </script>
-	<link rel="icon" type="image/png" href="{{ favicon }}">
-</head>
+    <link rel="icon" type="image/png" href="{{ favicon }}" />
+  </head>
 
-<body>
-	<div style="background: {{ color }};" id="hero">
-			<div id="title-bar">
-				<div>
-					<h1>{{ title }}</h1>
-					<div id="subtitle">{{ subtitle }}</div>
-				</div>
-				<div>
-					{% for icon in icons %}
-					<a href='{{ icon.url }}' class='symbol' title='{{ icon.id }}' aria-label='{{ icon.label }}'></a>
-					{% endfor %}
-				</div>
-			</div>
-	</div>
+  <body>
+    <div style="background: {{ color }};" id="hero">
+      <div id="title-bar">
+        <div>
+          <h1>{{ title }}</h1>
+          <div id="subtitle">{{ subtitle }}</div>
+        </div>
+        <div>
+          {% for icon in icons %}
+          <a
+            href="{{ icon.url }}"
+            class="symbol"
+            title="{{ icon.id }}"
+            aria-label="{{ icon.label }}"
+          ></a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
 
-	<div id="page-wrap">
-		<div class="card">
-			<h2 class="card-title">About</h2>
-			<div class="card-text">{{ about }}</div>
-		</div>
+    <div id="page-wrap">
+      <div class="card">
+        <h2 class="card-title">About</h2>
+        <div class="card-text">{{ about }}</div>
+      </div>
 
-		<div class="card">
-			<h2 class="card-title">Education</h2>
-			{% for school in schools%}
-			<div class="card-list-element" role="button" tabindex="0" aria-expanded="false">
-				<div class="card-list-title">{{ school.title }}</div>
-				<div class="card-list-subtitle">{{ school.subtitle }}</div>
-				<div class="card-hidden">
-					<div class="card-list-text">{{ school.text }}</div>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
+      <div class="card">
+        <h2 class="card-title">Education</h2>
+        {% for school in schools%}
+        <div
+          class="card-list-element"
+          role="button"
+          tabindex="0"
+          aria-expanded="false"
+        >
+          <div class="card-list-title">{{ school.title }}</div>
+          <div class="card-list-subtitle">{{ school.subtitle }}</div>
+          <div class="card-hidden">
+            <div class="card-list-text">{{ school.text }}</div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
 
-		<div class="card">
-			<h2 class="card-title">Employment</h2>
-			{% for job in jobs %}
-			<div class="card-list-element" role="button" tabindex="0" aria-expanded="false">
-				<div class="card-list-title">{{ job.title }}</div>
-				<div class="card-list-subtitle">{{ job.position }} <br /> {{ job.dates }}</div>
-				<div class="card-hidden">
-					<div class="card-list-text">{{ job.text }}</div>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
+      <div class="card">
+        <h2 class="card-title">Employment</h2>
+        {% for job in jobs %}
+        <div
+          class="card-list-element"
+          role="button"
+          tabindex="0"
+          aria-expanded="false"
+        >
+          <div class="card-list-title">{{ job.title }}</div>
+          <div class="card-list-subtitle">
+            {{ job.position }} <br />
+            {{ job.dates }}
+          </div>
+          <div class="card-hidden">
+            <div class="card-list-text">{{ job.text }}</div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
 
-		<div class="card">
-			<h2 class="card-title">Experience</h2>
-			<div class="card-list-element no_select small">
-				<b class="no_select">Proficent:</b> {{ experiences.proficient }}
-			</div>
-			<div class="card-list-element no_select small">
-				<b class="no_select">Some Experience:</b> {{ experiences.some }}
-			</div>
-			<div class="card-list-element no_select small">
-				<b class="no_select">Frameworks &amp; Libraries:</b> {{ experiences.frameworks }}
-			</div>
-			<div class="card-list-element no_select small">
-				<b class="no_select">Tools:</b> {{ experiences.tools }}
-			</div>
-		</div>
+      <div class="card">
+        <h2 class="card-title">Experience</h2>
+        <div class="card-list-element no_select small">
+          <b class="no_select">Proficent:</b> {{ experiences.proficient }}
+        </div>
+        <div class="card-list-element no_select small">
+          <b class="no_select">Some Experience:</b> {{ experiences.some }}
+        </div>
+        <div class="card-list-element no_select small">
+          <b class="no_select">Frameworks &amp; Libraries:</b> {{
+          experiences.frameworks }}
+        </div>
+        <div class="card-list-element no_select small">
+          <b class="no_select">Tools:</b> {{ experiences.tools }}
+        </div>
+      </div>
 
-		<div class="card">
-			<h2 class="card-title">Projects</h2>
-			{% for project in projects %}
-			<div class="card-list-element small" role="button" tabindex="0" aria-expanded="false">
-				<b>{{ project.title }}:</b> {{ project.description }}
-				<div class="card-hidden">
-					<div class="card-list-text">{{ project.text }}</div>
-					{% if project.uses is defined %}
-					<br />
-					<p>
-						<b>Uses: </b> {{ project.uses }}
-					</p>
-					{% endif %}
-					{% for button in project.buttons %}
-					<a  style="color: {{ color }}"class="card-button" href="{{ button.link }}" target="_blank">{{ button.text }}</a>
-					{% endfor %}
-				</div>
-			</div>
-			{% endfor %}
-		</div>
+      <div class="card">
+        <h2 class="card-title">Projects</h2>
+        {% for project in projects %}
+        <div
+          class="card-list-element small"
+          role="button"
+          tabindex="0"
+          aria-expanded="false"
+        >
+          <b>{{ project.title }}:</b> {{ project.description }}
+          <div class="card-hidden">
+            <div class="card-list-text">{{ project.text }}</div>
+            {% if project.uses is defined %}
+            <br />
+            <p><b>Uses: </b> {{ project.uses }}</p>
+            {% endif %} {% for button in project.buttons %}
+            <a
+              style="color: {{ color }}"
+              class="card-button"
+              href="{{ button.link }}"
+              target="_blank"
+              >{{ button.text }}</a
+            >
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
 
-		<div class="card">
-			<h2 class="card-title">Awards</h2>
-			{% for award in awards %}
-			<div class="card-list-element" role="button" tabindex="0" aria-expanded="false">
-				<div class="card-list-title">{{ award.title }}</div>
-				<div class="card-list-subtitle">{{ award.subtitle }} <br /> {{ award.dates }}</div>
-				<div class="card-hidden">
-					<div class="card-list-text">{{ award.text }}</div>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
+      <div class="card">
+        <h2 class="card-title">Awards</h2>
+        {% for award in awards %}
+        <div
+          class="card-list-element"
+          role="button"
+          tabindex="0"
+          aria-expanded="false"
+        >
+          <div class="card-list-title">{{ award.title }}</div>
+          <div class="card-list-subtitle">
+            {{ award.subtitle }} <br />
+            {{ award.dates }}
+          </div>
+          <div class="card-hidden">
+            <div class="card-list-text">{{ award.text }}</div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
 
-		<div class="card">
-			<h2 class="card-title">Activites</h2>
-			{% for activity in activities %}
-			<div class="card-list-element no_select small">
-				<b class="no_select">{{ activity.title }}:</b> {{ activity.description }}
-			</div>
-			{% endfor %}
-		</div>
+      <div class="card">
+        <h2 class="card-title">Activites</h2>
+        {% for activity in activities %}
+        <div class="card-list-element no_select small">
+          <b class="no_select">{{ activity.title }}:</b> {{ activity.description
+          }}
+        </div>
+        {% endfor %}
+      </div>
 
-		<footer>
-			<div id="footer">&copy; {{ title }}</div>
-			<div id="recognition">Generated using <a href="https://github.com/tylerkrupicka/material-resume">Material-Resume</a></div>
-		</footer>
-		
-	</div>
-
-
-</body>
-
+      <footer>
+        <div id="footer">&copy; {{ title }}</div>
+        <div id="recognition">
+          Generated using
+          <a href="https://github.com/tylerkrupicka/material-resume"
+            >Material-Resume</a
+          >
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

@@ -1,6 +1,18 @@
 {
   "projects": [
     {
+      "title": "Devtools DS",
+      "description": "React components and utilites for building browser devtools.",
+      "text": "A design system of components, libraries, and templates for building interactive browser devtools extensions. Each component is accessible and themed for multiple browsers.",
+      "uses": "Storybook, Typescript, PostCSS",
+      "buttons": [
+        {
+          "text": "GITHUB",
+          "link": "https://github.com/intuit/devtools-ds"
+        }
+      ]
+    },
+    {
       "title": "PostCSS Themed",
       "description": "A PostCSS plugin for simple cross-product component theming.",
       "text": "A PostCSS plugin built for internal use on Intuit design systems. It allows us to have components themed across Intuit products, with support for light and dark mode.",

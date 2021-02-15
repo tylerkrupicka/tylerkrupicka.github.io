@@ -1,9 +1,15 @@
 {
   "jobs": [
     {
+      "title": "Stripe",
+      "position": "Software Engineer",
+      "dates": "2021 February - Present",
+      "text": "Software engineer working on developer productivity for Javascript engineers at Stripe."
+    },
+    {
       "title": "Intuit",
       "position": "Senior Software Engineer",
-      "dates": "2019 August - Present",
+      "dates": "2019 August - 2021 February",
       "text": "Currently working on TurboTax interview, UI tooling, build infrastructure, and Intuit-wide design systems. I'm also the accessibility lead for the TurboTax interview experience."
     },
     {
